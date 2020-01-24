@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/</link>
+    <description>Recent content on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Jan 2020 01:01:56 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contact</title>
+      <link>https://theknowledgeseeker.in/contact/</link>
+      <pubDate>Sat, 25 Jan 2020 01:01:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/contact/</guid>
+      <description>Contact me! Contact me at the following links or fill this form to get in touch.
+I am digitally omnipresent and can be contacted anywhere, as long as the context matters. Following are my profiles that can be used to contact:
+ Twitter: @miphilomath Gitub: @miphilomath Instagram: @miphilomath IRC: philomath on #dgplug, freenode server Keybase: @philomath Mail me at philomath [ @ ] [disroot] [dot] [org]  </description>
+    </item>
+    
+    <item>
+      <title>Connecting Coffee!</title>
+      <link>https://theknowledgeseeker.in/posts/connecting_coffee/</link>
+      <pubDate>Mon, 25 Feb 2019 01:01:01 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/connecting_coffee/</guid>
+      <description>All coders/programmers are night owlers and prefer coffee to sustain the whole night. And here is something interesting for everyone who sustains on coffee. There is a special protocol made for all programmers whose primary Energy drink is coffee, named Hyper Text Coffee Pot Control Protocol. Let&#39;s start with, what is this coffee protocol?
+Rationale The rationale for making a standard protocol for all coffee driven programmers is too connect all these coffee pots along with their hosts (programmers) with each other using Internet.</description>
+    </item>
+    
+    <item>
+      <title>Naruto vs DBZ!</title>
+      <link>https://theknowledgeseeker.in/posts/naruto_vs_dbz/</link>
+      <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/naruto_vs_dbz/</guid>
+      <description>Naruto vs Dragon Ball Z! Yes, You guessed it right. It&#39;s the comparison between naruto vs Dragon Ball Z in the world of anime. It is true that even though most of you have already watched Naruto, Naruto Shippuden and Boruto, I haven&#39;t even finished my Naruto series. But now I regret, why I didn&#39;t watch this amazing series that pumps my blood even in the most sensual, non-action scenes. I didn&#39;t watch Naruto before because of its reputation of very lengthy series and I didn&#39;t want to Torrent Download or Torrent Stream these many episodes (I try to avoid torrenting as much as possible).</description>
+    </item>
+    
+    <item>
+      <title>Ansible101</title>
+      <link>https://theknowledgeseeker.in/posts/ansible101/</link>
+      <pubDate>Thu, 14 Feb 2019 19:36:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/ansible101/</guid>
+      <description>In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &amp;ldquo;Ansible 101&amp;rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC.</description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>https://theknowledgeseeker.in/projects/</link>
+      <pubDate>Wed, 13 Feb 2019 23:43:38 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/projects/</guid>
+      <description>I don&#39;t have much to showcase other than my blog over here. If you like, check out my profile on twitter and github to find out more about me and my projects.
+Projects I am working on or I am part of:
+ Decompiled Magi-CARP  Communities I represent and the ones that helped me grow:
+ dgplug ILUG-D Pydelhi LearnandTeach Mozilla  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://theknowledgeseeker.in/about/</link>
+      <pubDate>Wed, 13 Feb 2019 23:42:17 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/about/</guid>
+      <description>Hello everyone! I am Mohit Bansal, a Computer Science Engineer based of New Delhi, India, and I am a philomath. I like advocating for Open Source Technologies, concerns for Data privacy and loves to learn. I love to learn everything and Everyone is a teacher or source of knowledge for me. But still, Physics, mathematics and Computers fascinates me the most. I am a Learner in general and my daily jobs includes, reading, writing and learning throughs, books, videos, blogs and Code.</description>
+    </item>
+    
+    <item>
+      <title>The month of OSS &amp; to get lost!</title>
+      <link>https://theknowledgeseeker.in/posts/the_month_of_oss/</link>
+      <pubDate>Wed, 13 Feb 2019 00:33:55 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/the_month_of_oss/</guid>
+      <description>October is the month of open source for me. Want to know why? In this blog post, I am going to share my Open Source Experience in the month of October 2018, in which I get to attend, Open Source Summit Europe 2018, Scotlug meetup and MozFest Festival as well :)
+This blog post is a long due, waiting in my draft for ages, for me to complete it and hit publish.</description>
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://theknowledgeseeker.in/posts/hello_world/</link>
+      <pubDate>Thu, 27 Jul 2017 10:23:44 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/hello_world/</guid>
+      <description>This Is CS50! Hello World! I am Mohit and a Philomath. Last Year, when I was in my sophomore Year, I learned about what MOOCs (Massive On-line Open Courses) are and the portals like Edx. This blog post is about my experience of CS50 course available for free on Edx by Harvard and Yale University and me.
+The best thing about MOOC that I loved are:
+ They are free of cost.</description>
+    </item>
+    
+  </channel>
+</rss>

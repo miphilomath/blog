@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Mohit Bansal">
+    <meta name="description" content="Philomath&#39;s Lair with all his learning compiled at one place">
+    <meta name="keywords" content="blog, website, developer, philomath, learner, personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ansible101"/>
+<meta name="twitter:description" content="In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC."/>
+
+    <meta property="og:title" content="Ansible101" />
+<meta property="og:description" content="In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theknowledgeseeker.in/posts/ansible101/" />
+<meta property="article:published_time" content="2019-02-14T19:36:52+05:30" />
+<meta property="article:modified_time" content="2019-02-14T19:36:52+05:30" />
+
+
+    
+      <base href="https://theknowledgeseeker.in/posts/ansible101/">
+    
+    <title>
+  Ansible101 · Philomath&#39;s Lair!
+</title>
+
+    
+      <link rel="canonical" href="https://theknowledgeseeker.in/posts/ansible101/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.62.2" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://theknowledgeseeker.in/">
+      Philomath&#39;s Lair!
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/contact/">Contact</a>
+          </li>
+        
+      
+      
+        
+        
+        
+          
+        
+          
+            
+              <li class="navigation-item menu-separator">
+                <span>|</span>
+              </li>
+              
+            
+            <li class="navigation-item">
+              <a href="https://theknowledgeseeker.in/es/">Espanol</a>
+            </li>
+          
+        
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Ansible101</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2019-02-14T19:36:52&#43;05:30'>
+                February 14, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              6-minute read
+            </span>
+          </div>
+          
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://theknowledgeseeker.in/tags/devops/">devops</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/tags/ansible/">ansible</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/tags/autmoation/">autmoation</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        <p>In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by <a href="https://twitter.com/trishna_g">@trishna_g</a> at <a href="https://dgplug.org">#dgplug</a> on freenode server, IRC. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&quot;</a> section to try Ansible right now.</p>
+<h2 id="lets-start">Let's Start</h2>
+<p>As a developer, atleast once in our lifetime, we all faced the frustration of configuring our systems/servers with same configurations again and again, due to system failures, or while changing to another operating system. If you know what I mean, that configuration and system setup process can be tiresome and boring, sucking all your excitement and energy to work on the project later on, right?</p>
+<p>Or as a user, any time, we change our Operating System, upgrade our system or recover from any failure, we have to setup our system again, as it was before. All the services, packages, libraries and most important system configurations should be as it was, so that we can work more efficiently on our project rather than worrying about configurations and missing packages during development.</p>
+<p>And we all thought, that's the way it has to be. Well, not exactly. There is a solution to this problem, by automating the process, using Ansible. Ansible is what we all heard of, every now and then, but if didn't, may be, that's what you're lacking.</p>
+<h2 id="ansible-is-the-need-of-the-hour">Ansible is the need of the hour!</h2>
+<p>In the enterprise, there are many tools that are needed to maintain the efficiency and workflow. And if we have to configure those 100s of systems manually, will you? I mean, it would be so easy if we could just instruct one of the system to configure all the remaining ones. Ansible does just the job for you, automating these tiresome and boring work for you.</p>
+<p>Ansible has various benefits, over manual configurations of 100s of systems. With the help of Ansible, you can easily setup all the systems at once, with same configuration and in case of any changes later, you just need to update the Ansible Playbook for all systems to update. Easy, no? Ansible is one of the criticial tools, used in enterprises and thus, definitely worth your time. In case of users, even to configure single system, learning Ansible might feel a bit overhead, but it will be helpful in future, when you have to recover from any failures, switch to different operating system etc.</p>
+<p>To find more on, why Ansible, check their official page <a href="https://www.ansible.com/overview/it-automation">here</a>.</p>
+<h2 id="getting-your-facts-straight">Getting your facts straight!</h2>
+<p>It goes without saying, if foundation's strong, so the building is! Let's work on our foundations of Ansible first. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&quot;</a> section to give it a try and come back here to fill in the gaps later. Though I prefer the former method. To understand on how Ansible works, check out their webpage, <a href="https://www.ansible.com/overview/how-ansible-works">here</a>.</p>
+<p>Few Keywords used in the realm of Ansible:</p>
+<ol>
+<li><strong>Inventory</strong> is the list of the computer systems you want to configure using your host system.</li>
+<li><strong>Playbook</strong> is markup file instructing Ansible to execute a set of statements on managed hosts.</li>
+<li><strong>Modules</strong> are the pre-written programs in the Ansible, to perform common tasks such as Ping (to test the connectivity). List of modules can be found at <a href="https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html">here</a>.</li>
+</ol>
+<p>TL;DR? In brief, A control system is used to configure your other systems known as Managed nodes, connected through a secured remote connection protocol, such SSH or Kerberos. All the systems enlisted in an inventory files can be controlled/managed by the control node, to execute a set of instructions or programs known as Ansible Modules using playbook written in a Markup Language (YAML) to setup, and configure the managed nodes at once.</p>
+<h2 id="are-we-having-fun-yet">Are we having fun yet?</h2>
+<p>What's the use of learning so many intricacies if we don't know how to use them, right? So, Let's get started! Feel free to follow the official Ansible <a href="https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html">Documentation</a>.</p>
+<h5 id="install-and-setting-up">Install and setting up</h5>
+<p>For your linux distribution, use the default package manager to install the &ldquo;ansible&rdquo; package. To install from source, follow the official documentation [here][]. In this case, we will take fedora as our operating system.</p>
+<ol>
+<li>Install using package manager or follow Official guide, <code>sudo dnf install ansible</code></li>
+<li>Check the version of your ansible, <code>ansible --version</code> and make sure, it is no older than 2.6.0.</li>
+</ol>
+<p>Now briefing the instructions by <a href="https://twitter.com/trishna_g">@trishna_g</a> during the #dgplug session:</p>
+<ol>
+<li>Set up the SSH Key on your system and copy that key to your managed hosts, in this case your local machine, in order to allow your control node to connect with managed hosts, using, <code>ssh-copy-id &lt;username&gt;@127.0.0.1</code>. In case you have multiple keys on your system, use, <code>ssh-copy-id -i &lt;absolutepath_to_key&gt; &lt;username&gt;@127.0.0.1</code>.</li>
+<li>You can verify the connection by SSHing into the managed host.</li>
+<li>Execute, <code>ansible all -i &quot;localhost,&quot; -c local -m ping</code>, where <code>all -i &quot;localhost&quot;</code> signifies all the nodes in inventory &ldquo;localhost&rdquo; to be used, defining &ldquo;local&rdquo; <a href="https://docs.ansible.com/ansible/latest/plugins/connection.html#plugin-list">connection protocol</a> using <code>-c local</code> to execute module &ldquo;ping&rdquo;.</li>
+<li>Then, try, <code>ansible all -i &quot;localhost,&quot; -c local -m shell -a '/bin/echo hello'</code> where echo program is used to run on shell module with message &ldquo;hello&rdquo;.</li>
+<li>Create a file in any directory named, &ldquo;hosts&rdquo; and write, &ldquo;localhost ansible_connection=local&rdquo; within the file. This file will now act as inventory for further demonstration.</li>
+<li>Execute, <code>ansible all -i hosts -m shell -a '/bin/echo hello'</code></li>
+<li>The way we added &ldquo;localhost&rdquo; in our custom inventory, we call it &ldquo;ungrouped&rdquo; hosts.</li>
+<li>To create a group of systems, say webserver, to control all systems from a particular group, we add the group as <code>[groupname]</code> in the above line.</li>
+<li>Now in the &ldquo;hosts&rdquo; file, on the top of your localhost add <code>[webserver]</code>. <strong>Do not put it on the same line</strong>.</li>
+<li>Execute <code>ansible webserver -i hosts -m shell -a '/bin/echo hello'</code></li>
+<li>Now, create a playbook, by creating a file, <code>demo.yml</code> in the same directory with contents as <a href="https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67">https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67</a>.</li>
+<li>Now, run, <code>ansible-playbook demo.yml -i hosts -v</code>.</li>
+</ol>
+<p>That's all for now, demonstrating about Ansible.</p>
+<h3 id="filling-the-gaps">Filling the gaps!</h3>
+<p>So, Yes! Ansible is one of the most important Devops tools, that will come handy not only for enterprises but also for individual developers. Full logs for the session can be found at dgplug.org/irclogs. Join us at #dgplug on freenode server IRC</p>
+<p>If you find any inconsistency on the content, ping me over IRC. I am philomath over freenode server. You can also find me at #dgplug on freenode server.</p>
+
+      </div>
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "philomath" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Make yourself useful and Learn!</p>
+    
+    
+    
+      
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

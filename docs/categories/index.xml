@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/categories/</link>
+    <description>Recent content in Categories on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Feb 2019 01:01:01 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>General</title>
+      <link>https://theknowledgeseeker.in/categories/general/</link>
+      <pubDate>Mon, 25 Feb 2019 01:01:01 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/general/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal</title>
+      <link>https://theknowledgeseeker.in/categories/personal/</link>
+      <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reviews</title>
+      <link>https://theknowledgeseeker.in/categories/reviews/</link>
+      <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/reviews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>experience</title>
+      <link>https://theknowledgeseeker.in/categories/experience/</link>
+      <pubDate>Wed, 13 Feb 2019 00:33:55 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/experience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opensource</title>
+      <link>https://theknowledgeseeker.in/categories/opensource/</link>
+      <pubDate>Wed, 13 Feb 2019 00:33:55 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/opensource/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

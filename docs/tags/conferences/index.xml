@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>conferences on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/tags/conferences/</link>
+    <description>Recent content in conferences on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Feb 2019 00:33:55 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The month of OSS &amp; to get lost!</title>
+      <link>https://theknowledgeseeker.in/posts/the_month_of_oss/</link>
+      <pubDate>Wed, 13 Feb 2019 00:33:55 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/the_month_of_oss/</guid>
+      <description>October is the month of open source for me. Want to know why? In this blog post, I am going to share my Open Source Experience in the month of October 2018, in which I get to attend, Open Source Summit Europe 2018, Scotlug meetup and MozFest Festival as well :)
+This blog post is a long due, waiting in my draft for ages, for me to complete it and hit publish.</description>
+    </item>
+    
+  </channel>
+</rss>

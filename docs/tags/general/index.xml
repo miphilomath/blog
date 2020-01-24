@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>general on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/tags/general/</link>
+    <description>Recent content in general on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jul 2017 10:23:44 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/tags/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://theknowledgeseeker.in/posts/hello_world/</link>
+      <pubDate>Thu, 27 Jul 2017 10:23:44 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/hello_world/</guid>
+      <description>This Is CS50! Hello World! I am Mohit and a Philomath. Last Year, when I was in my sophomore Year, I learned about what MOOCs (Massive On-line Open Courses) are and the portals like Edx. This blog post is about my experience of CS50 course available for free on Edx by Harvard and Yale University and me.
+The best thing about MOOC that I loved are:
+ They are free of cost.</description>
+    </item>
+    
+  </channel>
+</rss>

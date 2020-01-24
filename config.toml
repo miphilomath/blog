@@ -1,0 +1,149 @@
+baseURL = "https://theknowledgeseeker.in"
+languageCode = "en-us"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+title = "Philomath's Lair!"
+publishDir = "docs"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "philomath"
+
+[params]
+  author = "Mohit Bansal"
+  info = "A knowledge Seeker"
+  description = "Philomath's Lair with all his learning compiled at one place"
+  keywords = "blog, website, developer, philomath, learner, personal"
+  footercontent = "Make yourself useful and Learn!"
+  avatarurl = "images/avatar.jpg"
+
+  favicon_32 = "images/favicon-32x32.png"
+  favicon_16 = "images/favicon-32x32.png"
+
+
+  dateformat = "January 2, 2006"
+
+  hidecredits = false
+  hidecopyright = true
+  since = 2020
+
+  rtl = false
+  colorscheme = "light"
+  maxSeeAlsoItems = 5
+
+  math = true
+  custom_css = ["https://use.fontawesome.com/releases/v5.11.2/css/all.css"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+# Social Links
+[[params.social]]
+  name = "Github"
+  icon = "fab fa-github"
+  weight = 1
+  url = "https://github.com/miphilomath"
+
+[[params.social]]
+  name = "Gitlab"
+  icon = "fab fa-gitlab"
+  weight = 2
+  url = "https://gitlab.com/miphilomath"
+
+[[params.social]]
+  name = "Twitter"
+  icon = "fab fa-twitter"
+  weight = 3
+  url = "https://twitter.com/miphilomath"
+
+[[params.social]]
+  name = "Linkedin"
+  icon = "fab fa-linkedin"
+  weight = 4
+  url = "https://www.linkedin.com/in/emhtbnsl/"
+
+[[param.social]]
+  name = "Medium"
+  icon = "fab fa-medium"
+  weight = 5
+  url = "https://twitter.com/miphilomath"
+
+[[params.social]]
+  name = "Instagram"
+  icon = "fab fa-instagram"
+  weight = 6
+  url = "https://instagram.com/miphilomath"
+
+[[params.social]]
+  name = "RSS"
+  icon = "fas fa-rss"
+  weight = 7
+  url = "https://theknowledgeseeker.in/index.xml"
+
+
+[languages]
+  [languages.en]
+    languagename = "English"
+    
+    # Menu Links
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "About"
+        weight = 1
+        url = "/about/"
+
+      [[languages.en.menu.main]]
+        name = "Blog"
+        weight = 2
+        url = "/posts/"
+  
+      [[languages.en.menu.main]]
+        name = "Projects"
+        weight = 3
+        url = "/projects/"
+
+      [[languages.en.menu.main]]
+        name = "Contact"
+        weight = 4
+        url = "/contact/"
+
+  [languages.es]
+    languagename = "Espanol"
+    title = "Guarida de Philomath"
+
+    [languages.es.params]
+      author = "Mohit Bansal"
+      info = "Un Buscador de Conocimiento"
+      description = "Philomath's Learning con todo su aprendizaje compilado en un solo lugar"
+      keywords = "blog, website, developer, philomath, learner, personal"
+      footercontent = "¡Hazte útil y aprende!"
+    
+    # Menu Links
+    [languages.es.menu]
+      [[languages.es.menu.main]]
+        name = "Acerca de"
+        weight = 1
+        url = "/about/"
+
+      [[languages.es.menu.main]]
+        name = "Blog"
+        weight = 2
+        url = "/posts/"
+  
+      [[languages.es.menu.main]]
+        name = "Proyectos"
+        weight = 3
+        url = "/projects/"
+
+      [[languages.es.menu.main]]
+        name = "Contacto"
+        weight = 4
+        url = "/contact/"

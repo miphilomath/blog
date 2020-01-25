@@ -30,7 +30,7 @@ disqusShortname = "philomath"
   dateformat = "January 2, 2006"
 
   hidecredits = false
-  hidecopyright = true
+  hidecopyright = false
   since = 2020
 
   rtl = false
@@ -38,7 +38,6 @@ disqusShortname = "philomath"
   maxSeeAlsoItems = 5
 
   math = true
-  custom_css = ["https://use.fontawesome.com/releases/v5.11.2/css/all.css"]
 
 [taxonomies]
   category = "categories"

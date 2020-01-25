@@ -6,27 +6,36 @@
     <description>Recent content in Posts on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Feb 2019 01:01:01 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 16:21:00 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Learning is more than passing Exams!</title>
+      <link>https://theknowledgeseeker.in/posts/learning-is-more-than-studying/</link>
+      <pubDate>Sat, 25 Jan 2020 16:21:00 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/learning-is-more-than-studying/</guid>
+      <description>Learning is what keeps us alive. Learning is one of the many things that gives unique identity among each other, with the skills, we learned so far in our life, our behavior, mindset and logical reasoning skills, they are all learned by us, throughout our life, consciously or otherwise. It might be one of the things that makes us who we are, make us human, make us alive. In my opinion, if someone is not learning (anything) in their life, they are not living it and guess what, leanring doesn&#39;t always mean to study text books and pass examinations.</description>
+    </item>
+    
+    <item>
       <title>Connecting Coffee!</title>
-      <link>https://theknowledgeseeker.in/posts/connecting_coffee/</link>
+      <link>https://theknowledgeseeker.in/posts/connecting-coffee/</link>
       <pubDate>Mon, 25 Feb 2019 01:01:01 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/posts/connecting_coffee/</guid>
+      <guid>https://theknowledgeseeker.in/posts/connecting-coffee/</guid>
       <description>All coders/programmers are night owlers and prefer coffee to sustain the whole night. And here is something interesting for everyone who sustains on coffee. There is a special protocol made for all programmers whose primary Energy drink is coffee, named Hyper Text Coffee Pot Control Protocol. Let&#39;s start with, what is this coffee protocol?
 Rationale The rationale for making a standard protocol for all coffee driven programmers is too connect all these coffee pots along with their hosts (programmers) with each other using Internet.</description>
     </item>
     
     <item>
       <title>Naruto vs DBZ!</title>
-      <link>https://theknowledgeseeker.in/posts/naruto_vs_dbz/</link>
+      <link>https://theknowledgeseeker.in/posts/naruto-vs-dbz/</link>
       <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/posts/naruto_vs_dbz/</guid>
+      <guid>https://theknowledgeseeker.in/posts/naruto-vs-dbz/</guid>
       <description>Naruto vs Dragon Ball Z! Yes, You guessed it right. It&#39;s the comparison between naruto vs Dragon Ball Z in the world of anime. It is true that even though most of you have already watched Naruto, Naruto Shippuden and Boruto, I haven&#39;t even finished my Naruto series. But now I regret, why I didn&#39;t watch this amazing series that pumps my blood even in the most sensual, non-action scenes. I didn&#39;t watch Naruto before because of its reputation of very lengthy series and I didn&#39;t want to Torrent Download or Torrent Stream these many episodes (I try to avoid torrenting as much as possible).</description>
     </item>
     
@@ -40,24 +49,23 @@ Rationale The rationale for making a standard protocol for all coffee driven pro
     </item>
     
     <item>
-      <title>The month of OSS &amp; to get lost!</title>
-      <link>https://theknowledgeseeker.in/posts/the_month_of_oss/</link>
-      <pubDate>Wed, 13 Feb 2019 00:33:55 +0530</pubDate>
+      <title>Blog announcement</title>
+      <link>https://theknowledgeseeker.in/posts/blog-announcement/</link>
+      <pubDate>Thu, 14 Feb 2019 14:33:49 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/posts/the_month_of_oss/</guid>
-      <description>October is the month of open source for me. Want to know why? In this blog post, I am going to share my Open Source Experience in the month of October 2018, in which I get to attend, Open Source Summit Europe 2018, Scotlug meetup and MozFest Festival as well :)
-This blog post is a long due, waiting in my draft for ages, for me to complete it and hit publish.</description>
+      <guid>https://theknowledgeseeker.in/posts/blog-announcement/</guid>
+      <description>My voice! We all have something to say and share our views with others, right? We all want to speak our opinions without any hesitation, and share our point of view, don&#39;t we? And still, at times we don&#39;t share everything we want to. We all have something to say, don&#39;t we? And we all speak our feelings, our emotions whenever we want to share something with someone, right?
+But at times, based on the situation, either we don&#39;t put forward our feelings, our views and stays silent, which is by the way, not good.</description>
     </item>
     
     <item>
-      <title>Hello World!</title>
-      <link>https://theknowledgeseeker.in/posts/hello_world/</link>
-      <pubDate>Thu, 27 Jul 2017 10:23:44 +0530</pubDate>
+      <title>Old is Gold!</title>
+      <link>https://theknowledgeseeker.in/posts/older-posts.md/</link>
+      <pubDate>Thu, 14 Feb 2019 13:07:30 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/posts/hello_world/</guid>
-      <description>This Is CS50! Hello World! I am Mohit and a Philomath. Last Year, when I was in my sophomore Year, I learned about what MOOCs (Massive On-line Open Courses) are and the portals like Edx. This blog post is about my experience of CS50 course available for free on Edx by Harvard and Yale University and me.
-The best thing about MOOC that I loved are:
- They are free of cost.</description>
+      <guid>https://theknowledgeseeker.in/posts/older-posts.md/</guid>
+      <description>If you are looking for posts older than the ones present here? You can find them at https://phi2infinity.blogspot.in. All the older posts will be updated there only. I may or may not migrate the posts back to this website. Meanwhile all my writings are compiled at one place on github.
+To know more, read the moving announcement here.</description>
     </item>
     
   </channel>

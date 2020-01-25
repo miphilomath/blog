@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technical on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/categories/technical/</link>
+    <description>Recent content in technical on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Feb 2019 01:01:01 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/categories/technical/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connecting Coffee!</title>
+      <link>https://theknowledgeseeker.in/posts/connecting-coffee/</link>
+      <pubDate>Mon, 25 Feb 2019 01:01:01 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/connecting-coffee/</guid>
+      <description>All coders/programmers are night owlers and prefer coffee to sustain the whole night. And here is something interesting for everyone who sustains on coffee. There is a special protocol made for all programmers whose primary Energy drink is coffee, named Hyper Text Coffee Pot Control Protocol. Let&#39;s start with, what is this coffee protocol?
+Rationale The rationale for making a standard protocol for all coffee driven programmers is too connect all these coffee pots along with their hosts (programmers) with each other using Internet.</description>
+    </item>
+    
+    <item>
+      <title>Ansible101</title>
+      <link>https://theknowledgeseeker.in/posts/ansible101/</link>
+      <pubDate>Thu, 14 Feb 2019 19:36:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/ansible101/</guid>
+      <description>In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &amp;ldquo;Ansible 101&amp;rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC.</description>
+    </item>
+    
+  </channel>
+</rss>

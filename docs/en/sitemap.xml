@@ -3,28 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://theknowledgeseeker.in/contact/</loc>
-    <lastmod>2020-01-25T01:01:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/</loc>
-    <lastmod>2020-01-25T01:01:56+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://theknowledgeseeker.in/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theknowledgeseeker.in/"
-                />
-  </url>
-  
-  <url>
     <loc>https://theknowledgeseeker.in/categories/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -38,43 +18,48 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/coffee/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/categories/insights/</loc>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/posts/connecting_coffee/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/tags/learning/</loc>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/connection/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/posts/learning-is-more-than-studying/</loc>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/fun/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/tags/life/</loc>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/categories/general/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/</loc>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://theknowledgeseeker.in/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theknowledgeseeker.in/"
+                />
   </url>
   
   <url>
     <loc>https://theknowledgeseeker.in/posts/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/protocol/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://theknowledgeseeker.in/tags/</loc>
-    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -88,12 +73,47 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/dbz/</loc>
+    <loc>https://theknowledgeseeker.in/contact/</loc>
+    <lastmod>2020-01-25T01:01:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/coffee/</loc>
+    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/posts/connecting-coffee/</loc>
+    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/connection/</loc>
+    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/protocol/</loc>
+    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/categories/protocols/</loc>
+    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/categories/technical/</loc>
+    <lastmod>2019-02-25T01:01:01+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/dragonball/</loc>
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/fiction/</loc>
+    <loc>https://theknowledgeseeker.in/categories/literature/</loc>
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
   </url>
   
@@ -103,22 +123,17 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/posts/naruto_vs_dbz/</loc>
+    <loc>https://theknowledgeseeker.in/posts/naruto-vs-dbz/</loc>
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/categories/personal/</loc>
+    <loc>https://theknowledgeseeker.in/categories/others/</loc>
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://theknowledgeseeker.in/categories/reviews/</loc>
-    <lastmod>2019-02-22T22:22:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/reviews/</loc>
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
   </url>
   
@@ -133,13 +148,38 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/autmoation/</loc>
+    <loc>https://theknowledgeseeker.in/tags/automation/</loc>
     <lastmod>2019-02-14T19:36:52+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/devops/</loc>
+    <loc>https://theknowledgeseeker.in/categories/devops/</loc>
     <lastmod>2019-02-14T19:36:52+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/tutorial/</loc>
+    <lastmod>2019-02-14T19:36:52+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/announcement/</loc>
+    <lastmod>2019-02-14T14:33:49+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/posts/blog-announcement/</loc>
+    <lastmod>2019-02-14T14:33:49+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/general/</loc>
+    <lastmod>2019-02-14T14:33:49+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/posts/older-posts.md/</loc>
+    <lastmod>2019-02-14T13:07:30+05:30</lastmod>
   </url>
   
   <url>
@@ -153,48 +193,8 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/bucketlist/</loc>
-    <lastmod>2019-02-13T00:33:55+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/conferences/</loc>
-    <lastmod>2019-02-13T00:33:55+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/categories/experience/</loc>
-    <lastmod>2019-02-13T00:33:55+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/categories/opensource/</loc>
-    <lastmod>2019-02-13T00:33:55+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/opensource/</loc>
-    <lastmod>2019-02-13T00:33:55+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/posts/the_month_of_oss/</loc>
-    <lastmod>2019-02-13T00:33:55+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/announcement/</loc>
-    <lastmod>2017-07-27T10:23:44+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/general/</loc>
-    <lastmod>2017-07-27T10:23:44+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/posts/hello_world/</loc>
-    <lastmod>2017-07-27T10:23:44+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/at-a-glace/</loc>
+    <priority>0</priority>
   </url>
   
   <url>

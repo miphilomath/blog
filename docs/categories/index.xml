@@ -6,26 +6,53 @@
     <description>Recent content in Categories on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Feb 2019 01:01:01 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 16:21:00 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>General</title>
-      <link>https://theknowledgeseeker.in/categories/general/</link>
-      <pubDate>Mon, 25 Feb 2019 01:01:01 +0530</pubDate>
+      <title>insights</title>
+      <link>https://theknowledgeseeker.in/categories/insights/</link>
+      <pubDate>Sat, 25 Jan 2020 16:21:00 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/categories/general/</guid>
+      <guid>https://theknowledgeseeker.in/categories/insights/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>personal</title>
-      <link>https://theknowledgeseeker.in/categories/personal/</link>
+      <title>protocols</title>
+      <link>https://theknowledgeseeker.in/categories/protocols/</link>
+      <pubDate>Mon, 25 Feb 2019 01:01:01 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/protocols/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technical</title>
+      <link>https://theknowledgeseeker.in/categories/technical/</link>
+      <pubDate>Mon, 25 Feb 2019 01:01:01 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/technical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>literature</title>
+      <link>https://theknowledgeseeker.in/categories/literature/</link>
       <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/categories/personal/</guid>
+      <guid>https://theknowledgeseeker.in/categories/literature/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>others</title>
+      <link>https://theknowledgeseeker.in/categories/others/</link>
+      <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/others/</guid>
       <description></description>
     </item>
     
@@ -39,20 +66,11 @@
     </item>
     
     <item>
-      <title>experience</title>
-      <link>https://theknowledgeseeker.in/categories/experience/</link>
-      <pubDate>Wed, 13 Feb 2019 00:33:55 +0530</pubDate>
+      <title>devops</title>
+      <link>https://theknowledgeseeker.in/categories/devops/</link>
+      <pubDate>Thu, 14 Feb 2019 19:36:52 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/categories/experience/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opensource</title>
-      <link>https://theknowledgeseeker.in/categories/opensource/</link>
-      <pubDate>Wed, 13 Feb 2019 00:33:55 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/categories/opensource/</guid>
+      <guid>https://theknowledgeseeker.in/categories/devops/</guid>
       <description></description>
     </item>
     

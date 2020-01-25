@@ -6,20 +6,29 @@
     <description>Recent content in general on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jul 2017 10:23:44 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 14 Feb 2019 14:33:49 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/tags/general/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello World!</title>
-      <link>https://theknowledgeseeker.in/posts/hello_world/</link>
-      <pubDate>Thu, 27 Jul 2017 10:23:44 +0530</pubDate>
+      <title>Blog announcement</title>
+      <link>https://theknowledgeseeker.in/posts/blog-announcement/</link>
+      <pubDate>Thu, 14 Feb 2019 14:33:49 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/posts/hello_world/</guid>
-      <description>This Is CS50! Hello World! I am Mohit and a Philomath. Last Year, when I was in my sophomore Year, I learned about what MOOCs (Massive On-line Open Courses) are and the portals like Edx. This blog post is about my experience of CS50 course available for free on Edx by Harvard and Yale University and me.
-The best thing about MOOC that I loved are:
- They are free of cost.</description>
+      <guid>https://theknowledgeseeker.in/posts/blog-announcement/</guid>
+      <description>My voice! We all have something to say and share our views with others, right? We all want to speak our opinions without any hesitation, and share our point of view, don&#39;t we? And still, at times we don&#39;t share everything we want to. We all have something to say, don&#39;t we? And we all speak our feelings, our emotions whenever we want to share something with someone, right?
+But at times, based on the situation, either we don&#39;t put forward our feelings, our views and stays silent, which is by the way, not good.</description>
+    </item>
+    
+    <item>
+      <title>Old is Gold!</title>
+      <link>https://theknowledgeseeker.in/posts/older-posts.md/</link>
+      <pubDate>Thu, 14 Feb 2019 13:07:30 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/older-posts.md/</guid>
+      <description>If you are looking for posts older than the ones present here? You can find them at https://phi2infinity.blogspot.in. All the older posts will be updated there only. I may or may not migrate the posts back to this website. Meanwhile all my writings are compiled at one place on github.
+To know more, read the moving announcement here.</description>
     </item>
     
   </channel>

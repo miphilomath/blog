@@ -83,9 +83,21 @@ disqusShortname = "philomath"
   url = "https://instagram.com/miphilomath"
 
 [[params.social]]
+  name = "Keybase"
+  icon = "fab fa-keybase"
+  weight = 7
+  url = "https://keybase.io/philomath"
+
+[[param.social]]
+  name = "Flickr"
+  icon = "fab fa-flickr"
+  weight = 8
+  url = "https:"
+
+[[params.social]]
   name = "RSS"
   icon = "fas fa-rss"
-  weight = 7
+  weight = 9
   url = "https://theknowledgeseeker.in/index.xml"
 
 

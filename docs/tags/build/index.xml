@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/tags/build/</link>
+    <description>Recent content in build on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2020 22:32:52 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/tags/build/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Make Files!</title>
+      <link>https://theknowledgeseeker.in/posts/linux/make-files/</link>
+      <pubDate>Thu, 30 Jan 2020 22:32:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/linux/make-files/</guid>
+      <description>Make Files
+What are makefiles?
+you worker who will do tha job for you and for free even :P, same goes for CI, CD pipeline
+while working, corercting completing my freshman year project of c based text editor, I realized I should Upgrade my coding style to incorporate makefiles to be a efficient coder.
+So, before all the intricate details, on how to use makefiles, syntax and all. Let&amp;rsquo;s start with what it is first and why you should even care about it.</description>
+    </item>
+    
+  </channel>
+</rss>

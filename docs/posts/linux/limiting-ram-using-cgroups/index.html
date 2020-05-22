@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Mohit Bansal">
+    <meta name="description" content="Limiting Ram usage by browsers using cgroups
+when I was running my old p4 system on 1 gb ram.
+I have been using my 12 year old pentium 4 processor computer with 1.5GB ram and 1 GB of swap for last month with debian 9. It works smooth, way smoother than Windows equivalent. But here&rsquo;s a glitch, as soon as I start browsing, the memory consumption reaches the highest peak. My system starts to hang and slow down as long the browser is open.">
+    <meta name="keywords" content="blog, website, developer, philomath, learner, portfolio">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Use your Ram wisely!"/>
+<meta name="twitter:description" content="Limiting Ram usage by browsers using cgroups
+when I was running my old p4 system on 1 gb ram.
+I have been using my 12 year old pentium 4 processor computer with 1.5GB ram and 1 GB of swap for last month with debian 9. It works smooth, way smoother than Windows equivalent. But here&rsquo;s a glitch, as soon as I start browsing, the memory consumption reaches the highest peak. My system starts to hang and slow down as long the browser is open."/>
+
+    <meta property="og:title" content="Use your Ram wisely!" />
+<meta property="og:description" content="Limiting Ram usage by browsers using cgroups
+when I was running my old p4 system on 1 gb ram.
+I have been using my 12 year old pentium 4 processor computer with 1.5GB ram and 1 GB of swap for last month with debian 9. It works smooth, way smoother than Windows equivalent. But here&rsquo;s a glitch, as soon as I start browsing, the memory consumption reaches the highest peak. My system starts to hang and slow down as long the browser is open." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theknowledgeseeker.in/posts/linux/limiting-ram-using-cgroups/" />
+<meta property="article:published_time" content="2020-01-30T22:32:52+05:30" />
+<meta property="article:modified_time" content="2020-01-30T22:32:52+05:30" />
+
+
+    
+      <base href="https://theknowledgeseeker.in/posts/linux/limiting-ram-using-cgroups/">
+    
+    <title>
+  Use your Ram wisely! · Philomath&#39;s Lair!
+</title>
+
+    
+      <link rel="canonical" href="https://theknowledgeseeker.in/posts/linux/limiting-ram-using-cgroups/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.71.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://theknowledgeseeker.in/">
+      Philomath&#39;s Lair!
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/contact/">Contact</a>
+          </li>
+        
+      
+      
+        
+        
+        
+          
+        
+          
+            
+              <li class="navigation-item menu-separator">
+                <span>|</span>
+              </li>
+              
+            
+            <li class="navigation-item">
+              <a href="https://theknowledgeseeker.in/es/">Espanol</a>
+            </li>
+          
+        
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Use your Ram wisely!</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-01-30T22:32:52&#43;05:30'>
+                January 30, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2-minute read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://theknowledgeseeker.in/categories/linux/">linux</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/categories/technical/">technical</a></div>
+
+          <div class="tags">
+  <i class="fas fa-tag"></i>
+    <a href="https://theknowledgeseeker.in/tags/debugger/">debugger</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/tags/boot/">boot</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/tags/info/">info</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/tags/tutorial/">tutorial</a></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <p>Limiting Ram usage by browsers using cgroups</p>
+<p>when I was running my old p4 system on 1 gb ram.</p>
+<p>I have been using my 12 year old pentium 4 processor computer with  1.5GB ram and 1 GB of swap for last month with debian 9. It works  smooth, way smoother than Windows equivalent. But here&rsquo;s a glitch, as  soon as I start browsing, the memory consumption reaches the highest  peak. My system starts to hang and slow down as long the browser is  open. Multiprocessing is like a dream with my browser open in that good  old machine.</p>
+<p>Then, on a mytic day, I heard about this amazing utility, <a href="https://en.wikipedia.org/wiki/Cgroups">cgroups</a> (Control groups) which is the root of all visualization technology. So, an idea came to my mind, why not limit the memory usage of my browser  to an extent so that, my other processes don&rsquo;t hangup.</p>
+<p>I decided to trade off the load time of web pages with the benefits of  multitasking (atleast an IDE). This blog post describes how I achieved  the same and how can it benefit you as well.</p>
+<p>First, we should start with the basics. What is Cgroup and why do you care? Check out my another post on Cgroup to know more.</p>
+<h3 id="packages">Packages</h3>
+<p>We need some packages before setting up our cgroups.  Install the package cgroup-bin cgroup-tools using your favourite package manager (aptitude, rpm, dnf, pacman etc.)</p>
+<p>To know more about cgroups, read my other post on the same.</p>
+<p>=========================</p>
+<p>Cgroups or Process containers?</p>
+<p>Cgroup</p>
+<p>Why do you care?</p>
+<p>How it leads to virtualisation technology?</p>
+<p>Note: The author is very new to the concept of Cgroup and might be incorrect. If you find any inconsistency, contact the author and guide on  improving it. The author will improve the post as his knowledge on the  subject will improve.</p>
+<p>========================</p>
+<h3 id="references">References</h3>
+<p>The post and forum that helped me out are all outlined below:</p>
+<p>In draft since: July 17, 2018</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "philomath" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Make yourself useful and Learn!</p>
+      
+      
+        ©
+        
+        2020
+         Mohit Bansal 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

@@ -38,21 +38,6 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/</loc>
-    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://theknowledgeseeker.in/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theknowledgeseeker.in/"
-                />
-  </url>
-  
-  <url>
     <loc>https://theknowledgeseeker.in/posts/</loc>
     <lastmod>2020-01-25T16:21:00+05:30</lastmod>
   </url>
@@ -75,6 +60,21 @@
   <url>
     <loc>https://theknowledgeseeker.in/contact/</loc>
     <lastmod>2020-01-25T01:01:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/</loc>
+    <lastmod>2020-01-25T01:01:56+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://theknowledgeseeker.in/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theknowledgeseeker.in/"
+                />
   </url>
   
   <url>
@@ -113,13 +113,8 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/posts/write-your-voice/</loc>
+    <loc>https://theknowledgeseeker.in/posts/others/write-your-voice/</loc>
     <lastmod>2020-01-14T17:22:15+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/posts/mask-is-real-you/</loc>
-    <lastmod>2019-03-06T23:08:39+05:30</lastmod>
   </url>
   
   <url>
@@ -168,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/posts/naruto-vs-dbz/</loc>
+    <loc>https://theknowledgeseeker.in/posts/others/naruto-vs-dbz/</loc>
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
   </url>
   
@@ -183,7 +178,7 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/posts/age-is-just-a-number/</loc>
+    <loc>https://theknowledgeseeker.in/posts/others/age-is-just-a-number/</loc>
     <lastmod>2019-02-19T20:54:34+05:30</lastmod>
   </url>
   
@@ -284,6 +279,11 @@
   
   <url>
     <loc>https://theknowledgeseeker.in/at-a-glace/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/gallery/</loc>
     <priority>0</priority>
   </url>
   

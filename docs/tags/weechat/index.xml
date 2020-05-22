@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>weechat on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/tags/weechat/</link>
+    <description>Recent content in weechat on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Feb 2020 22:32:52 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/tags/weechat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Weechat relaying</title>
+      <link>https://theknowledgeseeker.in/posts/linux/weechat-relay/</link>
+      <pubDate>Sat, 29 Feb 2020 22:32:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/linux/weechat-relay/</guid>
+      <description>Elitebnc after being in service for more than 5 years, is shut in January 2020 and many ghosts who was relying on Elitebnc bouncer to exist, were being exorcised.
+IRC all the way? (how to remain online on IRC everysecond)
+Bouncers? I was on elitebnc for quite sometime, until they shut down
+Why not quassel or IRCcloud? Maxking wrote a post on persistent irc setup and shared his reasons to use weechat over everything else.</description>
+    </item>
+    
+  </channel>
+</rss>

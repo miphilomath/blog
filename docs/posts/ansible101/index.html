@@ -4,10 +4,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Mohit Bansal">
-    <meta name="description" content="Philomath&#39;s Lair with all his learning compiled at one place">
-    <meta name="keywords" content="blog, website, developer, philomath, learner, personal">
+    <meta name="description" content="In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC.">
+    <meta name="keywords" content="blog, website, developer, philomath, learner, portfolio">
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ansible101"/>
@@ -32,16 +33,14 @@
       <link rel="canonical" href="https://theknowledgeseeker.in/posts/ansible101/">
     
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
-    
-
+      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -55,7 +54,7 @@
     <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.71.0" />
   </head>
 
   
@@ -154,17 +153,18 @@
       </header>
 
       <div>
+        
         <p>In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by <a href="https://twitter.com/trishna_g">@trishna_g</a> at <a href="https://dgplug.org">#dgplug</a> on freenode server, IRC. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&quot;</a> section to try Ansible right now.</p>
-<h2 id="lets-start">Let's Start</h2>
+<h2 id="lets-start">Let&rsquo;s Start</h2>
 <p>As a developer, atleast once in our lifetime, we all faced the frustration of configuring our systems/servers with same configurations again and again, due to system failures, or while changing to another operating system. If you know what I mean, that configuration and system setup process can be tiresome and boring, sucking all your excitement and energy to work on the project later on, right?</p>
 <p>Or as a user, any time, we change our Operating System, upgrade our system or recover from any failure, we have to setup our system again, as it was before. All the services, packages, libraries and most important system configurations should be as it was, so that we can work more efficiently on our project rather than worrying about configurations and missing packages during development.</p>
-<p>And we all thought, that's the way it has to be. Well, not exactly. There is a solution to this problem, by automating the process, using Ansible. Ansible is what we all heard of, every now and then, but if didn't, may be, that's what you're lacking.</p>
+<p>And we all thought, that&rsquo;s the way it has to be. Well, not exactly. There is a solution to this problem, by automating the process, using Ansible. Ansible is what we all heard of, every now and then, but if didn&rsquo;t, may be, that&rsquo;s what you&rsquo;re lacking.</p>
 <h2 id="ansible-is-the-need-of-the-hour">Ansible is the need of the hour!</h2>
 <p>In the enterprise, there are many tools that are needed to maintain the efficiency and workflow. And if we have to configure those 100s of systems manually, will you? I mean, it would be so easy if we could just instruct one of the system to configure all the remaining ones. Ansible does just the job for you, automating these tiresome and boring work for you.</p>
 <p>Ansible has various benefits, over manual configurations of 100s of systems. With the help of Ansible, you can easily setup all the systems at once, with same configuration and in case of any changes later, you just need to update the Ansible Playbook for all systems to update. Easy, no? Ansible is one of the criticial tools, used in enterprises and thus, definitely worth your time. In case of users, even to configure single system, learning Ansible might feel a bit overhead, but it will be helpful in future, when you have to recover from any failures, switch to different operating system etc.</p>
 <p>To find more on, why Ansible, check their official page <a href="https://www.ansible.com/overview/it-automation">here</a>.</p>
 <h2 id="getting-your-facts-straight">Getting your facts straight!</h2>
-<p>It goes without saying, if foundation's strong, so the building is! Let's work on our foundations of Ansible first. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&quot;</a> section to give it a try and come back here to fill in the gaps later. Though I prefer the former method. To understand on how Ansible works, check out their webpage, <a href="https://www.ansible.com/overview/how-ansible-works">here</a>.</p>
+<p>It goes without saying, if foundation&rsquo;s strong, so the building is! Let&rsquo;s work on our foundations of Ansible first. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&quot;</a> section to give it a try and come back here to fill in the gaps later. Though I prefer the former method. To understand on how Ansible works, check out their webpage, <a href="https://www.ansible.com/overview/how-ansible-works">here</a>.</p>
 <p>Few Keywords used in the realm of Ansible:</p>
 <ol>
 <li><strong>Inventory</strong> is the list of the computer systems you want to configure using your host system.</li>
@@ -173,7 +173,7 @@
 </ol>
 <p>TL;DR? In brief, A control system is used to configure your other systems known as Managed nodes, connected through a secured remote connection protocol, such SSH or Kerberos. All the systems enlisted in an inventory files can be controlled/managed by the control node, to execute a set of instructions or programs known as Ansible Modules using playbook written in a Markup Language (YAML) to setup, and configure the managed nodes at once.</p>
 <h2 id="are-we-having-fun-yet">Are we having fun yet?</h2>
-<p>What's the use of learning so many intricacies if we don't know how to use them, right? So, Let's get started! Feel free to follow the official Ansible <a href="https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html">Documentation</a>.</p>
+<p>What&rsquo;s the use of learning so many intricacies if we don&rsquo;t know how to use them, right? So, Let&rsquo;s get started! Feel free to follow the official Ansible <a href="https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html">Documentation</a>.</p>
 <h5 id="install-and-setting-up">Install and setting up</h5>
 <p>For your linux distribution, use the default package manager to install the &ldquo;ansible&rdquo; package. To install from source, follow the official documentation [here][]. In this case, we will take fedora as our operating system.</p>
 <ol>
@@ -195,12 +195,13 @@
 <li>Now, create a playbook, by creating a file, <code>demo.yml</code> in the same directory with contents as <a href="https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67">https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67</a>.</li>
 <li>Now, run, <code>ansible-playbook demo.yml -i hosts -v</code>.</li>
 </ol>
-<p>That's all for now, demonstrating about Ansible.</p>
+<p>That&rsquo;s all for now, demonstrating about Ansible.</p>
 <h3 id="filling-the-gaps">Filling the gaps!</h3>
 <p>So, Yes! Ansible is one of the most important Devops tools, that will come handy not only for enterprises but also for individual developers. Full logs for the session can be found at dgplug.org/irclogs. Join us at #dgplug on freenode server IRC</p>
 <p>If you find any inconsistency on the content, ping me over IRC. I am philomath over freenode server. You can also find me at #dgplug on freenode server.</p>
 
       </div>
+
 
       <footer>
         
@@ -252,26 +253,31 @@
 
       </div>
 
-      <footer class="footer">
-  <section class="container">
-    
-      <p>Make yourself useful and Learn!</p>
-    
-    
       
-        © 2020
+  <footer class="footer">
+    <section class="container">
       
-       Mohit Bansal 
-    
-    
-       · 
-      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-    
-    
-  </section>
-</footer>
+        <p>Make yourself useful and Learn!</p>
+      
+      
+        ©
+        
+        2020
+         Mohit Bansal 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
 
     </main>
+
+    
+
+    
 
     
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PyconIndia on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/series/pyconindia/</link>
+    <description>Recent content in PyconIndia on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Feb 2019 14:59:27 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/series/pyconindia/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PyconIndia2018</title>
+      <link>https://theknowledgeseeker.in/posts/conferences/pyconindia/pyconindia2018/</link>
+      <pubDate>Wed, 20 Feb 2019 14:59:27 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/conferences/pyconindia/pyconindia2018/</guid>
+      <description>Pycon India 2018 at a glance</description>
+    </item>
+    
+  </channel>
+</rss>

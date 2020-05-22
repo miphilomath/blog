@@ -15,11 +15,14 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "philomath"
 
+[permalink]
+  posts = "/:year/:month/:title/"
+
 [params]
   author = "Mohit Bansal"
   info = "A knowledge Seeker"
   description = "Philomath's Lair with all his learning compiled at one place"
-  keywords = "blog, website, developer, philomath, learner, personal"
+  keywords = "blog, website, developer, philomath, learner, portfolio"
   footercontent = "Make yourself useful and Learn!"
   avatarurl = "images/avatar.jpg"
 

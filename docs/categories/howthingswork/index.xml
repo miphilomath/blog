@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>howthingswork on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/categories/howthingswork/</link>
+    <description>Recent content in howthingswork on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2020 22:32:52 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/categories/howthingswork/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Digital Pigeon</title>
+      <link>https://theknowledgeseeker.in/posts/linux/digital-pigeon/</link>
+      <pubDate>Thu, 30 Jan 2020 22:32:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/linux/digital-pigeon/</guid>
+      <description>Ever wonder how
+To know more how email system works in reality, in bits and bytes, read about the digital pigeon!
+Thanks to sayan at making these concepts more palpable at Pycon India 2018.
+if you also wonder about how things work, you might like my other blogs on the same.
+How dns works?
+How Internet works
+How linux boots
+How encryption works? It&amp;rsquo;s just multiplexing</description>
+    </item>
+    
+  </channel>
+</rss>

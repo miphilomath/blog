@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSS on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/categories/oss/</link>
+    <description>Recent content in OSS on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Feb 2020 19:36:52 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/categories/oss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mutt Mutt, who?</title>
+      <link>https://theknowledgeseeker.in/posts/linux/mutt-mutt-who/</link>
+      <pubDate>Thu, 30 Jan 2020 22:32:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/linux/mutt-mutt-who/</guid>
+      <description>in this series, i will share about mutt, a terminal based email client, quite popular among command line heroes and open source purists, who prefer text emails over any html emails.
+All email client sucks! This one sucks less!
+To know more how email system works in reality, in bits and bytes, read about the digital pigeon!
+mutt
+isync
+msmtp
+rbsync
+New contender is Aerc.
+In draft since october 16, 2018</description>
+    </item>
+    
+    <item>
+      <title>What is your PASS-word?</title>
+      <link>https://theknowledgeseeker.in/posts/linux/what-is-your-password/</link>
+      <pubDate>Thu, 30 Jan 2020 22:32:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/linux/what-is-your-password/</guid>
+      <description>Ever been frustated remembering so many password for so many services you signed up for, and sometimes only for one time use? If yes, this blog post will change your situation, as it did for me.
+Before
+Single sign on using third party services leading that entity total control about and knowledge about my presence everywhere.
+Using same and weak passwords everywhere, with minor difference which adds to the threat analysis.</description>
+    </item>
+    
+  </channel>
+</rss>

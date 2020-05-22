@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Mohit Bansal">
+    <meta name="description" content="How IRC works and all.">
+    <meta name="keywords" content="blog, website, developer, philomath, learner, portfolio">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Internet Relay Chat!"/>
+<meta name="twitter:description" content="How IRC works and all."/>
+
+    <meta property="og:title" content="Internet Relay Chat!" />
+<meta property="og:description" content="How IRC works and all." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theknowledgeseeker.in/posts/legacy/internet-relay-chat/" />
+<meta property="article:published_time" content="2018-10-09T09:48:04-07:00" />
+<meta property="article:modified_time" content="2018-10-09T09:48:04-07:00" />
+
+
+    
+      <base href="https://theknowledgeseeker.in/posts/legacy/internet-relay-chat/">
+    
+    <title>
+  Internet Relay Chat! · Philomath&#39;s Lair!
+</title>
+
+    
+      <link rel="canonical" href="https://theknowledgeseeker.in/posts/legacy/internet-relay-chat/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.71.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://theknowledgeseeker.in/">
+      Philomath&#39;s Lair!
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/contact/">Contact</a>
+          </li>
+        
+      
+      
+        
+        
+        
+          
+        
+          
+            
+              <li class="navigation-item menu-separator">
+                <span>|</span>
+              </li>
+              
+            
+            <li class="navigation-item">
+              <a href="https://theknowledgeseeker.in/es/">Espanol</a>
+            </li>
+          
+        
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Internet Relay Chat!</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2018-10-09T09:48:04-07:00'>
+                October 9, 2018
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              9-minute read
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>This blog post will cover the basics of IRC (Internet Relay Chat) and  who should use it. It&rsquo;s been a long time since I first used IRC and it  was not very pleasing experience at first. And now, I use IRC as my  primary mode of communication.</p>
+<p>I won&rsquo;t be suprised if you haven&rsquo;t heard of IRC yet and even if you  heard of it, never tried it. I know what are you thinking right now,  &ldquo;IRC, stupid, eh!&quot;. I will try to change your thoughts towards IRC by  this blog post.</p>
+<p>Warning! This blog post contains all the answers to your curiosity and  will destroy the fun of finding the answer yourself. Also it tend to be  lengthy post, so grab your popcorn.</p>
+<h3 id="prologue">Prologue</h3>
+<p>I was introduced to IRC last year when I found about <a href="https://dgplug.org/">#dgplug</a> on internet. I found the website and their <a href="https://dgplug.org/summertraining18/">summer training</a> page very interesting and thus joined the channel instantly using the web portal of freenode at <a href="http://webchat.freenode.net/">Webchat</a>. It was my first experience on such a trivial messaging platform. The  Interface was so simple which I was not used to. All text and no  graphics, which can afraid many new comers to IRC but it is also the  reason why IRC is preferred at #dgplug (later).</p>
+<p>If you want to join summer training at #dgplug, you have to use IRC to attend and I insist you on doing so.</p>
+<h3 id="irc">IRC?</h3>
+<p>IRC is an abbreviation for the term <a href="https://en.wikipedia.org/wiki/Internet_Relay_Chat">Internet Relay Chat</a>. If I had to tell someone on what IRC is, I say, &ldquo;It&rsquo;s is a primitive  whatsapp&rdquo; i.e. predecessor of all modern messaging platform which uses  client/server model (later). IRC was created in <em>1988</em>, and as they say, &ldquo;Old is Gold&rdquo;. Let&rsquo;s find out what wikipedia knows about IRC?</p>
+<blockquote>
+<p><strong>Internet Relay Chat</strong> (<strong>IRC</strong>) is an <a href="https://en.wikipedia.org/wiki/Application_layer">application layer</a> protocol that facilitates communication in the form of text. The chat process works on a client/server networking model.</p>
+</blockquote>
+<p>We got this cryptic definition of IRC on wikipedia. Let me help you with this. In a broad sense, IRC is a <a href="https://en.wikipedia.org/wiki/Communication_protocol">protocol</a> that is used by IRC clients to communicate with each other and is based on client/server model. If you are familiar with basics of computer  networking, IRC is one of many protocols used on the internet, and if  you don&rsquo;t, don&rsquo;t worry.</p>
+<h4 id="protocol">Protocol!</h4>
+<p>What is a protocol? At first I didn&rsquo;t understand the term quite well and if you are the same, I will be explaining, what it means.</p>
+<p>Protocol are the set of rules or agreement between two parties or  clients or country or machine, they will use to communicate each other.</p>
+<p>Let me simplify in my own words. Let say there are two person A and B,  how would they communicate each other? Using any of their common  language, either English, Spanish etc. These languages use a common set  of rules a.k.a protocol that both person know and will be able to  understand each other. But both A and B have to use same language or  protocol (rules) to communicate, else the communication will surely  fail. Any other person C cannot understand what A and B is talking about unless he uses the same protocol as well.</p>
+<p>Similarly, in computing, there are many protocols (communication rules)  used. FTP, TCP, HTTP are few of them and IRC is one of them as well.</p>
+<h3 id="how-does-it-work">How does it work?</h3>
+<p>The following illustration describes how the communication process actually work on the IRC <a href="https://en.wikipedia.org/wiki/Computer_network">network</a> (set of two or more computers connected together, wired or wireless using IRC protocol).</p>
+<p><a href="https://2.bp.blogspot.com/-Uj3pCsQ5Ngc/W070jz18SHI/AAAAAAAAADI/4YSJaY5f9XoyMiAVKzRNK47DAufhAwWMwCLcBGAs/s1600/Screenshot%2Bfrom%2B2018-07-18%2B13-33-28.png"><img src="https://2.bp.blogspot.com/-Uj3pCsQ5Ngc/W070jz18SHI/AAAAAAAAADI/4YSJaY5f9XoyMiAVKzRNK47DAufhAwWMwCLcBGAs/s640/Screenshot%2Bfrom%2B2018-07-18%2B13-33-28.png" alt="img"></a></p>
+<p>There are various IRC servers available for you to join such as  Freenode, OFTC, GimpNet et cetera. Each server has various channels  (analogous to groups in modern messaging platform). When we are  connected to IRC network via any of its server, say Freenode, we can  communicate to every other client connected on the same server. Clients  send their message to the central server which in turn broadcast to all  presently connected clients. Similarly, they can send their message to  the server and that&rsquo;s how we communicate using IRC. As simple as that!</p>
+<p>Note: You cannot read message sent to the server when you are  disconnected from the server. We will learn later on how to overcome  this problem.</p>
+<h4 id="server">Server!</h4>
+<p>In the illustration above, you might have noticed, <em><strong>servers.</strong></em> So what are the servers? I have found that many people still don&rsquo;t  understand the true meaning of server. When I asked someone on what a  server is? He replied, &ldquo;A kind of database&rdquo;. He is wrong, and there is  nothing wrong in being wrong. Just right your wrong.</p>
+<p>I would suggest you to find the answer yourself first and if you don&rsquo;t understand it, come back.</p>
+<p>&ldquo;<a href="https://en.wikipedia.org/wiki/Server_(computing)">Server</a> are computer programs that serve your or another program request and  returns a response.&rdquo; That&rsquo;s it and that is how client server model  works in reality. HTTP protocol (use client server model) is the best  example used on web servers. When you go to any website, you make a  request on the web server hosting the website and returns a response of  the web page for that website.</p>
+<p><a href="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.opensourcevarsity.com%2Fimages%2Fapache%2Finstall%2Flesson1%2Fdiagram1.png&amp;f=1"><img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.opensourcevarsity.com%2Fimages%2Fapache%2Finstall%2Flesson1%2Fdiagram1.png&amp;f=1" alt="img"></a></p>
+<p>In IRC, there are many servers available to join and since IRC is an  open protocol, you can even make your own server. How?(Another blog  post, maybe!)</p>
+<h4 id="ping---pong">Ping - Pong!</h4>
+<p>As explained above, there are server running IRC protocol, waiting for client request to response. But there is more!</p>
+<p>To remain connected to the server, client needs to send request at  periodic time intervals to make certain whether client is connected to  server or not. To achieve this, IRC use a lightweight packet with no  data (to save bandwidth, because IRC is a low bandwidth protocol) called PING and server responds with packet called PONG. You can verify this  by using any <a href="https://en.wikipedia.org/wiki/Packet_analyzer">packet analyzer</a> tool like wireshark and tcpdump.</p>
+<p>So, if you want to call someone over IRC, you can say, &ldquo;ping</p>
+<p>&quot; and he will respond as &ldquo;pong &ldquo;.</p>
+<p>PS: Ping is an utility used in linux operating systems to verify the  internet connectivity between two remote computers, in our case, client  and server.</p>
+<p>Still Not interested? You should be because of there are various features that will be useful.</p>
+<h3 id="why-do-we-care">Why do we care?</h3>
+<p>Why should we waste our time reading about something we don&rsquo;t care? We  shouldn&rsquo;t. Here are the reasons, you should be familiar with IRC and its usage. Here I will try to list few advantages and problems of IRC  protocol.</p>
+<h4 id="advantages">Advantages:</h4>
+<ul>
+<li>Because Everyone is here using IRC as their primary mode of  communication. Many upstream project discussion like debian, fedora are  done on IRC and Mailing List. You can suggest features and contact  project mentors directly on their project channel on IRC. They are  always eager to help. (Don&rsquo;t know what a mailing list? Check later with  my blog)</li>
+<li>IRC works almost in real time even in low bandwidth internet where most of the modern messaging clients will fail.</li>
+<li>IRC looks boring and everything is textual form and commands. So you have to read a lot of boring unformatted text to communicate via IRC.  But they will help you make habit of reading boring text of  documentation. (This can be a problem to few but an advantage for most)</li>
+<li>Low bandwidth? No issue, IRC got you covered. IRC works flawlessly on low-bandwidth internet and it&rsquo;s a bliss.</li>
+</ul>
+<h4 id="problems">Problems:</h4>
+<blockquote>
+<p><em>&ldquo;Nothing is perfect! And same goes with IRC&rdquo;</em></p>
+</blockquote>
+<p>There are few problem or disadvantages of IRC, but you can overcome  those problems yourself as described in the solutions thereafter.</p>
+<ol>
+<li>Habit of not using it. People who are used to modern chatting clients with graphics, does not want to switch to IRC.</li>
+<li>Aesthetics, The text formatting of IRC clients is not very beautiful and thus people see it as a problem.</li>
+<li>You can read messages only when you are connected. That is, it does  not store the messages for you when you are not connected to the  server.</li>
+<li>Privacy! <em><strong>&ldquo;Be careful! Internet is a harsh place to live in!&quot;</strong></em> On IRC your IP address is visible to everyone and if you are security conscious, you might not like it.</li>
+<li>Lack of Features! If you used Slack or Gitter, you might say IRC doesn&rsquo;t have many features to praise about.</li>
+</ol>
+<h4 id="solutions">Solutions:</h4>
+<p>We read about many problems that one might face with IRC but don&rsquo;t get  disheartened just yet. We can always overcome these problem whenever we  want. Just follow the solutions described below in the same order.</p>
+<ol>
+<li>Try it and then decide for yourself. Once you get the hang of it, you won&rsquo;t have any difficulty using it.</li>
+<li>Yes, IRC uses plain text, but all IRC clients allow us to modify  and configure using plugins. So, you can add features, change its looks  and what not. (Plugins are programming scripts that adds to the  functionality. You can find various plugins <a href="https://weechat.org/scripts/">here</a>.)</li>
+<li>To read the chats when you are offline, you need to setup a bouncer server. To setup the bouncer, read this <a href="https://geeksocket.in/blog/connect-irc-bouncer/">guide</a> by <a href="https://github.com/bhavin192">bhavin192</a>.</li>
+<li>Since your IP is publicly visible, I would suggest you to read next section to be safe.</li>
+<li>Thousands of available plugins can make your life easier.</li>
+</ol>
+<h4 id="heading"></h4>
+<h3 id="lets-start-with-it">Let&rsquo;s start with it!</h3>
+<p>Here are some tutorials that might be helpful:
+- <a href="https://en.wikipedia.org/wiki/Wikipedia:IRC/Tutorial">https://en.wikipedia.org/wiki/Wikipedia:IRC/Tutorial</a></p>
+<h4 id="which-client-to-select">Which Client to Select?</h4>
+<h4 id="heading-1"></h4>
+<h4 id="communication-guidelines-and-etiquette">Communication Guidelines and etiquette</h4>
+<p>- <a href="https://freenode.net/changuide">https://freenode.net/changuide</a></p>
+<h4 id="channels-to-join">Channels to join?</h4>
+<p>Make your own channel: <a href="https://freenode.net/groupreg">https://freenode.net/groupreg</a>
+Register your nick: <a href="https://freenode.net/kb/answer/registration">https://freenode.net/kb/answer/registration</a></p>
+<h3 id="be-safe-internet-is-harsh-place-to-live-in">Be safe! Internet is harsh place to live in.</h3>
+<p>Use cloaks, bouncers, Ssl connection.
+Use Tor to connect to IRC networks. <a href="https://phi2infinity.blogspot.com/2018/07/setting-up-tor-to-connect-to-irc-network.html">Here</a> is a blog post on, how to set up the same.</p>
+<h3 id="more-features-to-it">More Features to it!</h3>
+<p>Bouncer</p>
+<p>IRC chatbot</p>
+<p>Totally configurable to your needs</p>
+<h3 id="alternatives-to-irc">Alternatives to IRC</h3>
+<p>There are tonnes of alternative to IRC in modern world like Gitter,  Slack et. al, there is one that is worth mentioning, Matrix Protocol.  Matrix like IRC is also another open communication protocol that works  on decentralized model rather than conventional client-server model.</p>
+<p>There is also another advantage to matrix that it can be used to  communicate on multiple platforms using single Matrix based client. You  can link, Telegram, Gitter, Slack and IRC as well on your matrix client. So, no matter what different platform your team or friends use, you can connect to all of them using a single client. Matrix also helps to read message while you are offline, and it hides your IP to others as well.</p>
+<p>Riot.im is one of the matrix based client that works on your desktop as well smartphone.</p>
+<h3 id="how-do-i-know-the-above-stuff">How do I know the above stuff?</h3>
+<p>Freenode knowledge base (<a href="https://freenode.net/kb/all),">https://freenode.net/kb/all),</a> gentoo wiki, #dgplug, weechat wiki</p>
+<p>My talk on IRC and slides are here.</p>
+<p>I have made a presentation which might be helpful on the topic <a href="https://slides.com/philomath/deck#/">here</a>.</p>
+<h3 id="further-references">Further References</h3>
+<ol>
+<li>IRC terminologies (Blog post, coming soon!)</li>
+<li>IRC clients and wikies</li>
+<li>IRC command cheatsheet (Blog post, coming soon!)</li>
+<li>IRC channel modes guide <a href="http://docs.dal.net/docs/modes.html">here</a>.</li>
+<li>IRC Bouncers</li>
+<li>Tor</li>
+<li>IRC chatbots</li>
+<li>IRC plugins:<a href="https://hackernoon.com/my-weechat-plugins-9278fe4783c"> https://hackernoon.com/my-weechat-plugins-9278fe4783c </a></li>
+<li>[https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat#Config_Files_Manually%20Configure%20All%20.conf%20Files%20Manually](<a href="https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat#Config_Files_Manually">https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/XChat#Config_Files_Manually</a> Configure All .conf Files Manually)</li>
+</ol>
+<p>If you find any inconsistency on the content, ping me over IRC. I am</p>
+<p><em>philomath</em></p>
+<p>over freenode server. You can also find me at #dgplug on freenode server.</p>
+<p>Note: This post might be incomplete, please notify me if you find any discrepancies.</p>
+<pre><code>Till then, To infinity and Beyond !
+</code></pre>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "philomath" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Make yourself useful and Learn!</p>
+      
+      
+        ©
+        
+        2020
+         Mohit Bansal 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

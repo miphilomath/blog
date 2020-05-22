@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/tags/google/</link>
+    <description>Recent content in google on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Feb 2019 22:22:56 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How Google is taking over Opensource!</title>
+      <link>https://theknowledgeseeker.in/posts/others/taking-over-opensource/</link>
+      <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/others/taking-over-opensource/</guid>
+      <description>I was having a discussion with #dgplug member @thebigj (jaisinh) on Google events like devfest @pyconindia 2017 in Delhi and I realised something I never thought of before.
+His point of view on google events is that the google events/meetups donot feel like an open source collaborators and new enthusiasts but rather a marketting strategy by google to feed all the new developers the wrong wolf. Since every students is inspired by the name of google and the invite based system creates the hype and helps them to fall in the wrong place.</description>
+    </item>
+    
+  </channel>
+</rss>

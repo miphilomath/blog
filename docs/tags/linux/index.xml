@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/tags/linux/</link>
+    <description>Recent content in linux on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2020 22:32:52 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How Linux System Boots up!</title>
+      <link>https://theknowledgeseeker.in/posts/linux/how-linux-boots/</link>
+      <pubDate>Thu, 30 Jan 2020 22:32:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/linux/how-linux-boots/</guid>
+      <description>Power on
+BIOS: points to the bootloader (to multple select OS and to add more features)
+Loads kernel
+​	run level 1: looks for devices through I/O ports (autoprobing)
+​	handle control to Init
+Init Process
+​	Check for filesystem and disk failures
+​	start several daemons such as www server and print server
+​	starts getty program to watch keyboards and mount inputs
+​	daemons to support network services and x server.</description>
+    </item>
+    
+    <item>
+      <title>Mysterious language of Bash!</title>
+      <link>https://theknowledgeseeker.in/posts/linux/bash-crypts/</link>
+      <pubDate>Thu, 30 Jan 2020 22:32:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/linux/bash-crypts/</guid>
+      <description>About $# variables and fork bomb in bash
+How cryptic they are and link to the documentation and stack overflow.
+https://stackoverflow.com/questions/5163144/what-are-the-special-dollar-sign-shell-variables</description>
+    </item>
+    
+  </channel>
+</rss>

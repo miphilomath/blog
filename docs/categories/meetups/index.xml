@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>meetups on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/categories/meetups/</link>
+    <description>Recent content in meetups on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Jul 2017 17:20:25 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/categories/meetups/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My first meetup!</title>
+      <link>https://theknowledgeseeker.in/posts/legacy/my-first-meetup-pydelhi/</link>
+      <pubDate>Sat, 08 Jul 2017 17:20:25 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/legacy/my-first-meetup-pydelhi/</guid>
+      <description>Today, I attended my very first meetup PyDelhi. So I am going to share my experience about the meetup with you all.
+Since it’s going to be my very first meetup, I was really excited for this to be happen. I woke up early to reach there on time and voila, like everything, we want nothing goes wrong with, and then there it is, boom. I got late, I don’t know how but on reaching the venue I found I was much early.</description>
+    </item>
+    
+  </channel>
+</rss>

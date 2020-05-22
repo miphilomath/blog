@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    <meta name="author" content="Mohit Bansal">
+    <meta name="description" content="This installation was done during my attempt to contribute to git project. Alas! No luck
+This post documents the procedure to install git from its source code, problems faced aka challenges and their solutions that worked for my system. Installing git from source is not as easy as sudo apt install git and doing so, you will realize the importance of packages available in official repositories to save our time and effort just to install the software.">
+    <meta name="keywords" content="blog, website, developer, philomath, learner, portfolio">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git Init"/>
+<meta name="twitter:description" content="This installation was done during my attempt to contribute to git project. Alas! No luck
+This post documents the procedure to install git from its source code, problems faced aka challenges and their solutions that worked for my system. Installing git from source is not as easy as sudo apt install git and doing so, you will realize the importance of packages available in official repositories to save our time and effort just to install the software."/>
+
+    <meta property="og:title" content="Git Init" />
+<meta property="og:description" content="This installation was done during my attempt to contribute to git project. Alas! No luck
+This post documents the procedure to install git from its source code, problems faced aka challenges and their solutions that worked for my system. Installing git from source is not as easy as sudo apt install git and doing so, you will realize the importance of packages available in official repositories to save our time and effort just to install the software." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://theknowledgeseeker.in/posts/gitandgithub/installing-git/" />
+<meta property="article:published_time" content="2020-01-25T17:47:02+05:30" />
+<meta property="article:modified_time" content="2020-01-25T17:47:02+05:30" />
+
+
+    
+      <base href="https://theknowledgeseeker.in/posts/gitandgithub/installing-git/">
+    
+    <title>
+  Git Init · Philomath&#39;s Lair!
+</title>
+
+    
+      <link rel="canonical" href="https://theknowledgeseeker.in/posts/gitandgithub/installing-git/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.71.0" />
+  </head>
+
+  
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://theknowledgeseeker.in/">
+      Philomath&#39;s Lair!
+    </a>
+    
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://theknowledgeseeker.in/contact/">Contact</a>
+          </li>
+        
+      
+      
+        
+        
+        
+          
+        
+          
+            
+              <li class="navigation-item menu-separator">
+                <span>|</span>
+              </li>
+              
+            
+            <li class="navigation-item">
+              <a href="https://theknowledgeseeker.in/es/">Espanol</a>
+            </li>
+          
+        
+      
+    </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">Git Init</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-01-25T17:47:02&#43;05:30'>
+                January 25, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <p>This installation was done during my attempt to contribute to git project. Alas! No luck</p>
+<p>This post documents the procedure to install git from its source  code, problems faced aka challenges and their solutions that worked for  my system. Installing git from source is not as easy as <code>sudo apt  install git</code> and doing so, you will realize the importance of packages  available in official repositories to save our time and effort just to  install the software.</p>
+<p>System details:</p>
+<p>Os: Linux Mint Sylvia</p>
+<p>Model: Dell Inspiron 3543</p>
+<p>Kernel: 4.10.0-42-generic</p>
+<p>Ram: 4GB</p>
+<p>CPU: Intel I3 4th gen</p>
+<p>Following are the steps to install git on your system from its source.</p>
+<p>So, by now, you might have guessed, the first step would be to download its source code to install.</p>
+<p>\1. Download source code of GIT from <a href="https://github.com/git/git">github mirror</a> or their git repo <a href="https://www.kernel.org/pub/software/scm/git/">here</a> using web interface or git clone utility as: <code>git clone </code><a href="https://github.com/git/git%60.%60">https://github.com/git/git`.`</a></p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback"> 
+</code></pre></div><p>If you have downloaded the tar file from the web interface, untar it and enter into its directory using cd utility.</p>
+<p>Note: Now, to understand a little, what you are going to do next, read  INSTALL instruction file in there. If you want to keep your currently  installed git intact, install the git from source to another directory  (other than from user&rsquo;s /bin directory).</p>
+<p>I installed my git on /usr/local/bin directory but you can install it anywhere you  want. But if you install in directory not pointed by your system PATH  variable, make sure to enter whole path of the installed git directory  (i.e. from source) when executing it. In short, the directory chosen by  you,k is the place where the git will be installed locally.</p>
+<p>I used profile feedback option to install git on my system which might be faster at times in cpu intensive tasks while trading my compiling and  installation time. You might chose to install it without this option.  (Follow INSTALL file in the directory)</p>
+<p>Make sure you  have enough time (about 3-4 hours) to install git (with profile  feedback) and tackle various challenges that you might encounter (can be different for your system, but stackoverflow can help)</p>
+<p>\2. make prefix=/path_to_directory profile</p>
+<p>In my case, path_to_directory was /usr/local, to install git on /usr/local/bin</p>
+<p>profile is used for profile feedback option.</p>
+<p>\3. make prefix=/usr/loca/ PROFILE=BUILD install</p>
+<p>This will install git on the prefixed directory.</p>
+<p>Challenges:</p>
+<p>There were many libraries missing on which git is dependent (details below)  and may throw error while installing. I am documenting few of them. <a href="https://github.com/Marslo/MyBlog/blob/master/Programming/Git/GitQ%26A.md">This</a> blog might have solution to your error and might be helpful.</p>
+<p>1: libssl-dev missing: <code>sudo apt install libssl-dev</code></p>
+<p>2: libcurl missing: `sudo apt install</p>
+<p>Third challenge: asciidoc missing. (<a href="http://www.methods.co.nz/asciidoc/INSTALL.html#X1">http://www.methods.co.nz/asciidoc/INSTALL.html#X1</a>)</p>
+<p>fourth: xsltproc missing.  (<a href="https://askubuntu.com/questions/462333/where-can-i-download-xsltproc-that-is-compatible-with-ubuntu-12-04#46234,">https://askubuntu.com/questions/462333/where-can-i-download-xsltproc-that-is-compatible-with-ubuntu-12-04#46234,</a> <a href="http://xmlsoft.org/XSLT/xsltproc.html">http://xmlsoft.org/XSLT/xsltproc.html</a></p>
+<p>fifth: xmlto missing: sudo apt install xmlto</p>
+<p>sixth:  docbook2x-texi: not found (<a href="http://docbook2x.sourceforge.net/,">http://docbook2x.sourceforge.net/,</a>  <a href="https://sourceforge.net/projects/docbook2x/files/docbook2x/0.8.8/docbook2X-0.8.8.tar.gz/download?use_mirror=excellmedia,">https://sourceforge.net/projects/docbook2x/files/docbook2x/0.8.8/docbook2X-0.8.8.tar.gz/download?use_mirror=excellmedia,</a> <a href="https://packages.debian.org/jessie/amd64/docbook2x/download">https://packages.debian.org/jessie/amd64/docbook2x/download</a>)</p>
+<p>install it using sudo make install&hellip;.</p>
+<p>make profile=/&hellip;. PROFILE=BUILD install</p>
+<p>seventh: perf failed, ,can&rsquo;t locate json.pm in /usr/local/bin but in /usr/bin so if are installing as global, then you might not encounter this error.  INstall perl module JSON: sudo perl -MCPAN -e &lsquo;install JSON&rsquo;</p>
+<p>Note: Using multiple jobs would be helpful for you. depending on the number  of cores, your system support, add attribute -j 2/3/4 or -j 20 if you  own a i9 :P</p>
+<p>Wait for 3 hours :P</p>
+<p>DONT QUIT, if you feel frustated, (cause I am :/)</p>
+<p>So many missing libraries, It took an hour just to complete all the dependecies :D</p>
+<p>Never realized the importance of packaging before, they really help us to work easily :)</p>
+<p>Important: First check their official docs here <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
+<p>In draft since 17/3/18</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "philomath" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Make yourself useful and Learn!</p>
+      
+      
+        ©
+        
+        2020
+         Mohit Bansal 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+    </main>
+
+    
+
+    
+
+    
+
+  </body>
+
+</html>

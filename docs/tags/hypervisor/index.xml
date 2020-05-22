@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hypervisor on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/tags/hypervisor/</link>
+    <description>Recent content in hypervisor on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Feb 2020 19:36:52 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/tags/hypervisor/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hypervisors</title>
+      <link>https://theknowledgeseeker.in/posts/hypervisors/</link>
+      <pubDate>Fri, 14 Feb 2020 19:36:52 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/hypervisors/</guid>
+      <description>What is hypervisor?
+Types of hypervisor
+Hypervisor I -&amp;gt; Bare metal (Xen, Linux, KVM, RedHat oVirt)
+Hypervisor II -&amp;gt; Hosted or shared
+Why today?
+Qemu, docker, and my interview with Amazon
+Hypervisor I
+​	Machine 1	machine2
+​	Hypervisor 1
+​	Hardware
+Hypervisor II
+​	machine1	machine2
+​	Hypervisor
+​	OS
+​	Hardware</description>
+    </item>
+    
+  </channel>
+</rss>

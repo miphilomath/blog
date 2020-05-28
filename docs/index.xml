@@ -6,7 +6,7 @@
     <description>Recent content on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jan 2020 01:01:56 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jan 2020 16:21:00 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/index.xml" rel="self" type="application/rss+xml" />
     
@@ -45,17 +45,6 @@ What can be your dare?
     </item>
     
     <item>
-      <title>Writing :: Raising your Voice!</title>
-      <link>https://theknowledgeseeker.in/posts/others/write-your-voice/</link>
-      <pubDate>Tue, 14 Jan 2020 17:22:15 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/posts/others/write-your-voice/</guid>
-      <description>If Reading is to Listening, then Writing is to Speaking!
-Reading is to Listening! That&amp;rsquo;s right! With the advent of digital era, Information gathering is no more limited to other people and new resources are available on the internet to learn, i.e., various blogs, videos and forums. This digital revolution also, empowers us to
-Voicing my thoughts! </description>
-    </item>
-    
-    <item>
       <title>Connecting Coffee!</title>
       <link>https://theknowledgeseeker.in/posts/connecting-coffee/</link>
       <pubDate>Mon, 25 Feb 2019 01:01:01 +0530</pubDate>
@@ -75,25 +64,13 @@ Rationale The rationale for making a standard protocol for all coffee driven pro
     </item>
     
     <item>
-      <title>Age is just a number!</title>
-      <link>https://theknowledgeseeker.in/posts/others/age-is-just-a-number/</link>
-      <pubDate>Tue, 19 Feb 2019 20:54:34 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/posts/others/age-is-just-a-number/</guid>
-      <description>Experience is what matters, we all grow, little by little each day, but not because we grow older physically. It&amp;rsquo;s not the age, that make us older, it is the experience we all have every day.
-This blog post is about Experiences.
-Naruto, he grew a little more.
-SUSE package hub project, even though, I didn&amp;rsquo;t have much of the practical experience on the project of packaging, but still I had a lot more to learn.</description>
-    </item>
-    
-    <item>
       <title>The month of OSS &amp; to get lost!</title>
       <link>https://theknowledgeseeker.in/posts/the-month-of-oss/</link>
       <pubDate>Fri, 15 Feb 2019 00:33:55 +0530</pubDate>
       
       <guid>https://theknowledgeseeker.in/posts/the-month-of-oss/</guid>
-      <description>October is the month of open source for me. Want to know why? In this blog post, I am going to share my Open Source Experience in the month of October 2018, in which I get to attend, Open Source Summit Europe 2018, Scotlug meetup and MozFest Festival as well :)
-This blog post is a long due, waiting in my draft for ages, for me to complete it and hit publish.</description>
+      <description>October is the month of open source for me. Want to know why? In this blog post, I am going to share my Open Source Experience in the month of October 2018, when attended, Open Source Summit Europe 2018, Scotlug meetup and MozFest Festival as well :)
+This blog post is a long due, waiting in my draft for ages, for me to complete it and hit publish. Last year, in the month of October, I got to experience the most out of the Open Source Culture so far.</description>
     </item>
     
     <item>
@@ -163,6 +140,15 @@ Projects I am working on or I am part of:
       
       <guid>https://theknowledgeseeker.in/gallery/</guid>
       <description>May be point to flickr or something.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://theknowledgeseeker.in/posts/others/meetups/scotlug-meetup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/others/meetups/scotlug-meetup/</guid>
+      <description></description>
     </item>
     
   </channel>

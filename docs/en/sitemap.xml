@@ -38,6 +38,21 @@
   </url>
   
   <url>
+    <loc>https://theknowledgeseeker.in/</loc>
+    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://theknowledgeseeker.in/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theknowledgeseeker.in/"
+                />
+  </url>
+  
+  <url>
     <loc>https://theknowledgeseeker.in/posts/</loc>
     <lastmod>2020-01-25T16:21:00+05:30</lastmod>
   </url>
@@ -60,21 +75,6 @@
   <url>
     <loc>https://theknowledgeseeker.in/contact/</loc>
     <lastmod>2020-01-25T01:01:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/</loc>
-    <lastmod>2020-01-25T01:01:56+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://theknowledgeseeker.in/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theknowledgeseeker.in/"
-                />
   </url>
   
   <url>
@@ -110,11 +110,6 @@
   <url>
     <loc>https://theknowledgeseeker.in/tags/weekendhacks/</loc>
     <lastmod>2020-01-18T22:56:31+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/posts/others/write-your-voice/</loc>
-    <lastmod>2020-01-14T17:22:15+05:30</lastmod>
   </url>
   
   <url>
@@ -175,16 +170,6 @@
   <url>
     <loc>https://theknowledgeseeker.in/categories/reviews/</loc>
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/posts/others/age-is-just-a-number/</loc>
-    <lastmod>2019-02-19T20:54:34+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/ramblings/</loc>
-    <lastmod>2019-02-19T20:54:34+05:30</lastmod>
   </url>
   
   <url>
@@ -285,6 +270,10 @@
   <url>
     <loc>https://theknowledgeseeker.in/gallery/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/posts/others/meetups/scotlug-meetup/</loc>
   </url>
   
   <url>

@@ -199,23 +199,56 @@
 <h5 id="install-and-setting-up">Install and setting up</h5>
 <p>For your linux distribution, use the default package manager to install the &ldquo;ansible&rdquo; package. To install from source, follow the official documentation [here][]. In this case, we will take fedora as our operating system.</p>
 <ol>
-<li>Install using package manager or follow Official guide, <code>sudo dnf install ansible</code></li>
-<li>Check the version of your ansible, <code>ansible --version</code> and make sure, it is no older than 2.6.0.</li>
+<li>
+<p>Install using package manager or follow Official guide,</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dnf install ansible 
+</code></pre></div></li>
+<li>
+<p>Check the version of your ansible, and make sure, it is no older than 2.6.0 using  <code>ansible --version</code>.</p>
+</li>
 </ol>
 <p>Now briefing the instructions by <a href="https://twitter.com/trishna_g">@trishna_g</a> during the #dgplug session:</p>
 <ol>
-<li>Set up the SSH Key on your system and copy that key to your managed hosts, in this case your local machine, in order to allow your control node to connect with managed hosts, using, <code>ssh-copy-id &lt;username&gt;@127.0.0.1</code>. In case you have multiple keys on your system, use, <code>ssh-copy-id -i &lt;absolutepath_to_key&gt; &lt;username&gt;@127.0.0.1</code>.</li>
-<li>You can verify the connection by SSHing into the managed host.</li>
-<li>Execute, <code>ansible all -i &quot;localhost,&quot; -c local -m ping</code>, where <code>all -i &quot;localhost&quot;</code> signifies all the nodes in inventory &ldquo;localhost&rdquo; to be used, defining &ldquo;local&rdquo; <a href="https://docs.ansible.com/ansible/latest/plugins/connection.html#plugin-list">connection protocol</a> using <code>-c local</code> to execute module &ldquo;ping&rdquo;.</li>
-<li>Then, try, <code>ansible all -i &quot;localhost,&quot; -c local -m shell -a '/bin/echo hello'</code> where echo program is used to run on shell module with message &ldquo;hello&rdquo;.</li>
-<li>Create a file in any directory named, &ldquo;hosts&rdquo; and write, &ldquo;localhost ansible_connection=local&rdquo; within the file. This file will now act as inventory for further demonstration.</li>
-<li>Execute, <code>ansible all -i hosts -m shell -a '/bin/echo hello'</code></li>
-<li>The way we added &ldquo;localhost&rdquo; in our custom inventory, we call it &ldquo;ungrouped&rdquo; hosts.</li>
-<li>To create a group of systems, say webserver, to control all systems from a particular group, we add the group as <code>[groupname]</code> in the above line.</li>
-<li>Now in the &ldquo;hosts&rdquo; file, on the top of your localhost add <code>[webserver]</code>. <strong>Do not put it on the same line</strong>.</li>
-<li>Execute <code>ansible webserver -i hosts -m shell -a '/bin/echo hello'</code></li>
-<li>Now, create a playbook, by creating a file, <code>demo.yml</code> in the same directory with contents as <a href="https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67">https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67</a>.</li>
-<li>Now, run, <code>ansible-playbook demo.yml -i hosts -v</code>.</li>
+<li>
+<p>Set up the SSH Key on your system and copy that key to your managed hosts, in this case your local machine, in order to allow your control node to connect with managed hosts, using,</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id &lt;username&gt;@127.0.0.1
+</code></pre></div><p>In case you have multiple keys on your system,</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id -i &lt;absolutepath_to_key&gt; &lt;username&gt;@127.0.0.1
+</code></pre></div><p>You can verify the connection by SSH-ing into the managed host.</p>
+</li>
+<li>
+<p>Execute the following instruction , where <code>all -i &quot;localhost&quot;</code> signifies all the nodes in inventory &ldquo;localhost&rdquo; to be used, defining &ldquo;local&rdquo; <a href="https://docs.ansible.com/ansible/latest/plugins/connection.html#plugin-list">connection protocol</a> using <code>-c local</code> to execute module &ldquo;ping&rdquo;.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible all -i <span style="color:#0ff;font-weight:bold">&#34;localhost,&#34;</span> -c <span style="color:#fff;font-weight:bold">local</span> -m ping
+</code></pre></div></li>
+<li>
+<p>Now, execute <code>shell</code> module to invoke <code>echo</code> program with message &ldquo;hello&rdquo;.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible all -i <span style="color:#0ff;font-weight:bold">&#34;localhost,&#34;</span> -c <span style="color:#fff;font-weight:bold">local</span> -m shell -a <span style="color:#0ff;font-weight:bold">&#39;/bin/echo hello&#39;</span>
+</code></pre></div></li>
+<li>
+<p>Create a file in any directory named, &ldquo;<strong>hosts</strong>&rdquo; and write, &ldquo;<em>localhost ansible_connection=local</em>&rdquo; within the file. This file will now act as inventory for further demonstration. To execute the shell using the hosts described in the &ldquo;hosts&rdquo; file, run,</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible all -i hosts -m shell -a <span style="color:#0ff;font-weight:bold">&#39;/bin/echo hello&#39;</span>
+</code></pre></div></li>
+<li>
+<p>The way we added &ldquo;<em>localhost</em>&rdquo; in our custom inventory, we call it &ldquo;<em>ungrouped</em>&rdquo; hosts.</p>
+</li>
+<li>
+<p>To create a group of systems, say webserver, to control all systems from a particular group, we add the group as <code>[groupname]</code> in the above line. Your file should have the following content</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[groupname]
+localhost ansible_connection=local
+</code></pre></div></li>
+<li>
+<p>Now in the &ldquo;hosts&rdquo; file, on the top of your localhost add <code>[webserver]</code> for <code>[groupname]</code>. <strong>Do not put it on the same line</strong> and run the following command.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible webserver -i hosts -m shell -a <span style="color:#0ff;font-weight:bold">&#39;/bin/echo hello&#39;</span>
+</code></pre></div></li>
+<li>
+<p>Now, create a playbook, by creating a file, <code>demo.yml</code> in the same directory with contents as <a href="https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67">https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67</a> and execute all the above commands using yaml by executing following instruction on shell.</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible-playbook demo.yml -i hosts -v
+</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#fff;font-weight:bold">hosts</span>: webserver
+  <span style="color:#fff;font-weight:bold">connection</span>: local
+   
+  <span style="color:#fff;font-weight:bold">tasks</span>:
+  - <span style="color:#fff;font-weight:bold">shell</span>: /bin/echo hello
+</code></pre></div></li>
 </ol>
 <p>That&rsquo;s all for now, demonstrating about Ansible.</p>
 <h3 id="filling-the-gaps">Filling the gaps!</h3>

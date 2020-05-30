@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jan 2020 16:21:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 16:19:12 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Guide me!</title>
+      <link>https://theknowledgeseeker.in/posts/what-categories/</link>
+      <pubDate>Sat, 30 May 2020 16:19:12 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/what-categories/</guid>
+      <description>If you have a keen eye like me, you must have noticed the categories and tags in each post and may even wonder, what this categories mean or what type of post are compiled in each category. I decided to write another post on helping the curiosity about categories and ease the exploration. Another reason to write this article is to help myself, to be consistent with the categories I use with my blog posts.</description>
+    </item>
     
     <item>
       <title>Learning is more than passing Exams!</title>

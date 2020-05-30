@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Jan 2020 16:21:00 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 16:19:12 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>announcement</title>
+      <link>https://theknowledgeseeker.in/tags/announcement/</link>
+      <pubDate>Sat, 30 May 2020 16:19:12 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/tags/announcement/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>learning</title>
@@ -170,15 +179,6 @@
       <pubDate>Thu, 14 Feb 2019 19:36:52 +0530</pubDate>
       
       <guid>https://theknowledgeseeker.in/tags/tutorial/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>announcement</title>
-      <link>https://theknowledgeseeker.in/tags/announcement/</link>
-      <pubDate>Thu, 14 Feb 2019 14:33:49 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/tags/announcement/</guid>
       <description></description>
     </item>
     

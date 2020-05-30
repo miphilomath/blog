@@ -1,5 +1,14 @@
 #!/bin/sh
 
+# Adding command argument, if present, add it as commit message with the date, else go with the default one. First argument being the commit message
+default="rebuilding site $(date)"
+msg=$default
+
+if [ $# -eq 1 ]
+then
+    msg="$1 $default"
+fi
+
 # If a command fails then the deploy stops
 set -e
 
@@ -15,7 +24,7 @@ cd docs
 git add .
 
 # Commit changes.
-msg="rebuilding site $(date)"
+#msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi

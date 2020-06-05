@@ -161,13 +161,19 @@
   <i class="fas fa-folder"></i>
     <a href="https://theknowledgeseeker.in/categories/techinal/">techinal</a>
       <span class="separator">•</span>
-    <a href="https://theknowledgeseeker.in/categories/howthingswork/">howthingswork</a></div>
+    <a href="https://theknowledgeseeker.in/categories/howthingswork/">howthingswork</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/categories/linux/">linux</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
     <a href="https://theknowledgeseeker.in/tags/fork/">fork</a>
       <span class="separator">•</span>
-    <a href="https://theknowledgeseeker.in/tags/linux/">linux</a></div>
+    <a href="https://theknowledgeseeker.in/tags/linux/">linux</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/tags/script/">script</a>
+      <span class="separator">•</span>
+    <a href="https://theknowledgeseeker.in/tags/forkbomb/">forkbomb</a></div>
 
         </div>
       </header>
@@ -184,9 +190,9 @@
 <p>How does a few characters exhaust all the system memory?</p>
 <p>I will just explain how the above, when executed result into a total shutdown within minutes. But to understand the concepts, you need to be familiar of the programming concepts of recursion and process forking (yup, that&rsquo;s what the fork is in fork bomb).</p>
 <p><strong>Recursion</strong>: In programming, when a function calls itself when  executed, this technique is know as recursion and a very useful concept when dealing with abstraction of logic. Our computer keeps track of all functions called with themselves on stack, in memory. Read the answer on <a href="https://stackoverflow.com/questions/25676961/understanding-how-recursive-functions-work">stackoverflow</a> to know more on <a href="https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/">how recursion works</a>.</p>
-<p><img src="../images/recursion.jpg" alt="Recursion"></p>
+<p><img src="https://theknowledgeseeker.in/posts/images/recursion.jpg" alt="Recursion"></p>
 <p><strong>Forking</strong>: Operating system is a software that manages system resources and provide them to each process on your system. A <a href="https://en.wikipedia.org/wiki/Fork_(system_call)">process fork</a> is a duplicate of another existing process on the system, called the parent process and the forked process is known as the child process. Each child process has the same attributes and memory requirements as the parent process unless otherwise specified.</p>
-<p><img src="../images/fork-bomb-process.jpg" alt="Forking"></p>
+<p><img src="https://theknowledgeseeker.in/posts/images/fork-bomb-process.jpg" alt="Forking"></p>
 <p>The above script may seem crytpic to you if you are new to bash, but the above fork bomb script in bash is equivalent to the following script. It defines a function &ldquo;func&rdquo; which calls itself twice as defined by <a href="https://ryanstutorials.net/linuxtutorial/piping.php">piping</a>. Piping the same function to itself doesn&rsquo;t add any more meaning, but it speeds up the process forking by creating 2 child process per parent process. &lsquo;&amp;&rsquo; directs each parent function to execute in background. Line 3 concludes the function definition and Line 4 invokes the first function call, which in return calls to child process over and over until you regret executing the above script.</p>
 <p>General form of the above fork bomb in bash</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">1.	func() {

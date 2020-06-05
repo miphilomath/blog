@@ -6,10 +6,23 @@
     <description>Recent content on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 May 2020 15:53:56 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 12:53:56 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fork Bomb!</title>
+      <link>https://theknowledgeseeker.in/posts/linux/fork-bomb/</link>
+      <pubDate>Fri, 05 Jun 2020 12:53:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/linux/fork-bomb/</guid>
+      <description>Try and execute the following script in your bash terminal:
+:(){ :|:&amp;amp; };: Hold up!
+ If you execute the above statement on your terminal it will result in fork bombing your system resulting into a total shutdown of your system. If you executed the above script, there is nothing to worry about. It&amp;rsquo;s no hack. Though above script is commonly used in Denial-Of-Service attack.
+So what just happened?
+The above script executed a function over and over until all your system resources were exhausted leaving no memory (one of the critical requirement for any process to work, including your operating system.</description>
+    </item>
     
     <item>
       <title>Think aloud, Speak Quiet!</title>
@@ -139,8 +152,8 @@ I am listing down all the posts available there with their title and the hyperli
       
       <guid>https://theknowledgeseeker.in/about/</guid>
       <description>Looking for Job. Hire Me! I am skilled in Linux development and Python software development practices with skills in DevOps. I have development experience on Mainframes and Django.
-I am available for full time opportunities, contract projects, consultancy and freelance work.
-I will add more details in the &amp;ldquo;Hire Me&amp;rdquo; section dedicated to my resume, skills and projects. For now, visit my linkedin profile to know my expertise and my Resume here on keybase.</description>
+I am available for full time opportunities, contract projects, consultancyand freelancework.
+I will add more details in the &amp;ldquo;Hire Me&amp;rdquo; section dedicated to my resume, skills and projects. For now, visit my linkedin profile to know my expertise and my Resume here on keybase here.</description>
     </item>
     
     <item>

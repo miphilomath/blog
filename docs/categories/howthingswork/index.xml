@@ -6,25 +6,22 @@
     <description>Recent content in howthingswork on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jan 2020 22:32:52 +0530</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2020 12:53:56 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/categories/howthingswork/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>The Digital Pigeon</title>
-      <link>https://theknowledgeseeker.in/posts/linux/digital-pigeon/</link>
-      <pubDate>Thu, 30 Jan 2020 22:32:52 +0530</pubDate>
+      <title>Fork Bomb!</title>
+      <link>https://theknowledgeseeker.in/posts/linux/fork-bomb/</link>
+      <pubDate>Fri, 05 Jun 2020 12:53:56 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/posts/linux/digital-pigeon/</guid>
-      <description>Ever wonder how
-To know more how email system works in reality, in bits and bytes, read about the digital pigeon!
-Thanks to sayan at making these concepts more palpable at Pycon India 2018.
-if you also wonder about how things work, you might like my other blogs on the same.
-How dns works?
-How Internet works
-How linux boots
-How encryption works? It&amp;rsquo;s just multiplexing</description>
+      <guid>https://theknowledgeseeker.in/posts/linux/fork-bomb/</guid>
+      <description>Try and execute the following script in your bash terminal:
+:(){ :|:&amp;amp; };: Hold up!
+ If you execute the above statement on your terminal it will result in fork bombing your system resulting into a total shutdown of your system. If you executed the above script, there is nothing to worry about. It&amp;rsquo;s no hack. Though above script is commonly used in Denial-Of-Service attack.
+So what just happened?
+The above script executed a function over and over until all your system resources were exhausted leaving no memory (one of the critical requirement for any process to work, including your operating system.</description>
     </item>
     
   </channel>

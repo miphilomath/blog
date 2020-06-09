@@ -18,6 +18,12 @@ disqusShortname = "philomath"
 [permalink]
   posts = "/:year/:month/:title/"
 
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   author = "Mohit Bansal"
   info = "A knowledge Seeker"

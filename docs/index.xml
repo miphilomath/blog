@@ -6,10 +6,21 @@
     <description>Recent content on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2020 12:53:56 +0530</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2020 12:42:17 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What Now?</title>
+      <link>https://theknowledgeseeker.in/about/what-now/</link>
+      <pubDate>Mon, 08 Jun 2020 12:42:17 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/about/what-now/</guid>
+      <description>This page is created to answer the most obnoxious question everyone ask each other, what are you doing now-a-days?
+I am creating these page after getting inspired from Derek Sivers. I will update this regularly with the last updated date on the top about my current professional work, personal projects, plans and books I have been reading. You can consider this page a live journal about myself.
+After my graduation, I joined SFLC.</description>
+    </item>
     
     <item>
       <title>Fork Bomb!</title>
@@ -22,16 +33,6 @@
  If you execute the above statement on your terminal it will result in fork bombing your system resulting into a total shutdown of your system. If you executed the above script, there is nothing to worry about. It&amp;rsquo;s no hack. Though above script is commonly used in Denial-Of-Service attack.
 So what just happened?
 The above script executed a function over and over until all your system resources were exhausted leaving no memory (one of the critical requirement for any process to work, including your operating system.</description>
-    </item>
-    
-    <item>
-      <title>Think aloud, Speak Quiet!</title>
-      <link>https://theknowledgeseeker.in/posts/reviews/quiet-the-power-of-introverts/</link>
-      <pubDate>Sun, 31 May 2020 15:53:56 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/posts/reviews/quiet-the-power-of-introverts/</guid>
-      <description>Prelogue!
-Last Year i.e., 2019, I gifted myself a lot of books from amazon, the ones I have been recommened by others and I was planning to read soon. And, only an year after I got the time to pick the book, I was most excited to read. It&amp;rsquo;s not I didn&amp;rsquo;t read in the meanwhile, I bought more books and piled them over this one. This year, I am on a streak of reading atleast 1 book a month and i selected Quiet, the power of introverts for the month of May, which I picked after watching the Ted talk by Susan Cain, the author of this amazing book.</description>
     </item>
     
     <item>
@@ -60,7 +61,7 @@ Last Year i.e., 2019, I gifted myself a lot of books from amazon, the ones I hav
       <guid>https://theknowledgeseeker.in/contact/</guid>
       <description>Contact me! Contact me at the following links or fill this form to get in touch.
 I am digitally omnipresent and can be contacted anywhere, as long as the context matters. Following are my profiles that can be used to contact:
- Twitter: @miphilomath Gitub: @miphilomath Instagram: @miphilomath Linkedin: @emhtbnsl IRC: philomath on #dgplug, #learnandteach on freenode server Keybase: @philomath | Chat: https://keybase.io/philomath/chat Mail me at philomath [ @ ] [disroot] [dot] [org]  </description>
+ Twitter: @miphilomath Gitub: @miphilomath Instagram: @miphilomath Linkedin: @emhtbnsl IRC: philomath on #dgplug, #learnandteach on freenode server Keybase: @philomath | Chat: https://keybase.io/philomath/chat Mail me at philomath [ @ ] [disroot] [dot] [org]  If you want to know what I have been doing now-a days, visit my Now page.</description>
     </item>
     
     <item>
@@ -146,14 +147,14 @@ I am listing down all the posts available there with their title and the hyperli
     </item>
     
     <item>
-      <title>Learn about me!</title>
-      <link>https://theknowledgeseeker.in/about/</link>
+      <title>Read more!</title>
+      <link>https://theknowledgeseeker.in/about/more-about-me/</link>
       <pubDate>Wed, 13 Feb 2019 23:42:17 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/about/</guid>
-      <description>Looking for Job. Hire Me! I am skilled in Linux development and Python software development practices with skills in DevOps. I have development experience on Mainframes and Django.
-I am available for full time opportunities, contract projects, consultancyand freelancework.
-I will add more details in the &amp;ldquo;Hire Me&amp;rdquo; section dedicated to my resume, skills and projects. For now, visit my linkedin profile to know my expertise and my Resume here on keybase here.</description>
+      <guid>https://theknowledgeseeker.in/about/more-about-me/</guid>
+      <description>Nice to see you here and thank you for showing interest to know me. To know what I have been doing these days, visit my Now page.
+Philomath! Yes, a philomath. A single word that describes me and my thirst for knowledge. Philomath originates from combining 2 greek words, &amp;ldquo;Philos and &amp;ldquo;math&amp;rdquo; that means, &amp;ldquo;lover of learning&amp;rdquo; or &amp;ldquo;knowledge seeker&amp;rdquo;.
+Languages I am multi-lingual and can speak a lot of languages, ranging from human comprehensible to computer languages.</description>
     </item>
     
     <item>
@@ -162,7 +163,11 @@ I will add more details in the &amp;ldquo;Hire Me&amp;rdquo; section dedicated t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://theknowledgeseeker.in/at-a-glace/</guid>
-      <description>To create a resume, at a glance to cover up all the gaps in the resume for the specific job</description>
+      <description>To create a resume, at a glance to cover up all the gaps in the resume for the specific job
+Separate page for talks.
+Now page sharing what I have been doing these days, https://sivers.org/nowff
+Use GIF, reference, https://vinayak.io/2020/05/04/the-hitchhikers-guide-to-clis-in-python-part-4-user-experience/
+Add tweet button on each post</description>
     </item>
     
     <item>

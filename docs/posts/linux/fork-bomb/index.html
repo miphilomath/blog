@@ -10,6 +10,8 @@
     <meta name="description" content="How fork bomb works in Bash.">
     <meta name="keywords" content="blog, website, developer, philomath, learner, portfolio">
 
+    
+
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Fork Bomb!"/>
 <meta name="twitter:description" content="How fork bomb works in Bash."/>
@@ -40,7 +42,7 @@
     
       
       
-      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -54,7 +56,7 @@
     <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.71.1" />
+    <meta name="generator" content="Hugo 0.72.0" />
 
     
     <script type="text/javascript">
@@ -81,7 +83,9 @@
 
   
   
-  <body class="colorscheme-light">
+  <body class="colorscheme-light"
+        onload=""
+  >
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
@@ -206,15 +210,17 @@
 <span style="color:#fff;font-weight:bold">while</span> True:
     os.fork()
 </code></pre></div><h4 id="how-can-we-prevent-fork-bomb-from-happening">How can we prevent fork bomb from happening?</h4>
-<p>First and foremost, <a href="https://phi2infinity.blogspot.com/2018/01/why-you-should-never-copy-terminal.html"><!-- raw HTML omitted -->Never trust online scripts<!-- raw HTML omitted --></a> and don&rsquo;t execute them before inspecting them.</p>
-<p>Secondly, we can always <!-- raw HTML omitted --><em>limit the number of process your system</em><!-- raw HTML omitted --> should execute at once using <em><strong>ulimit</strong></em>. Don&rsquo;t set the number of process too low or you won&rsquo;t be able to work smoothly as before. Though it just limits the count of processes to run simultaneously, not the memory it handles. So if a process using a lot of ram is used to fork bomb, be sure to limit the ram usage as well, though it could hamper the system performance for critical processes as well.</p>
+<p>First and foremost, <a href="https://phi2infinity.blogspot.com/2018/01/why-you-should-never-copy-terminal.html"><u>Never trust online scripts</u></a> and don&rsquo;t execute them before inspecting them.</p>
+<p>Secondly, we can always <u><em>limit the number of process your system</em></u> should execute at once using <em><strong>ulimit</strong></em>. Don&rsquo;t set the number of process too low or you won&rsquo;t be able to work smoothly as before. Though it just limits the count of processes to run simultaneously, not the memory it handles. So if a process using a lot of ram is used to fork bomb, be sure to limit the ram usage as well, though it could hamper the system performance for critical processes as well.</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#fff;font-weight:bold">ulimit</span> -S -u <span style="color:#ff0;font-weight:bold">5000</span> <span style="color:#007f7f"># set the maximum process limit to 5000</span>
 </code></pre></div><h4 id="references">References:</h4>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Fork_bomb">Wikipedia: Fork Bomb</a></li>
 <li><a href="https://www.cyberciti.biz/faq/understanding-bash-fork-bomb/">How to prevent fork bombing</a></li>
 <li><a href="https://malware.wikia.org/wiki/Fork_Bomb">Fork bombs in several languages</a></li>
+<li><a href="https://stackoverflow.com/questions/991142/how-does-this-bash-fork-bomb-work">Stackoverflow answer on fork bombs</a></li>
 </ul>
+<h4 id="tweethttpstwittercomintenttweetref_srctwsrc5etfwtextwonderhowforkbombswork3freadthissimpleandconciseonpostathttps3a2f2ftheknowledgeseekerin2fposts2flinux2ffork-bomb2fby40miphilomath"><a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&amp;text=Wonder+how+fork+bombs+work%3F+Read+this+simple+and+concise+on+post+at+https%3A%2F%2Ftheknowledgeseeker.in%2Fposts%2Flinux%2Ffork-bomb%2F+by+%40miphilomath">Tweet</a></h4>
 
       </div>
 

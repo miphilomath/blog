@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learn about me! on Philomath&#39;s Lair!</title>
+    <link>https://theknowledgeseeker.in/about/</link>
+    <description>Recent content in Learn about me! on Philomath&#39;s Lair!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Feb 2019 23:42:17 +0530</lastBuildDate>
+    
+	<atom:link href="https://theknowledgeseeker.in/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What Now?</title>
+      <link>https://theknowledgeseeker.in/about/what-now/</link>
+      <pubDate>Mon, 08 Jun 2020 12:42:17 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/about/what-now/</guid>
+      <description>This page is created to answer the most obnoxious question everyone ask each other, what are you doing now-a-days?
+I am creating these page after getting inspired from Derek Sivers. I will update this regularly with the last updated date on the top about my current professional work, personal projects, plans and books I have been reading. You can consider this page a live journal about myself.
+After my graduation, I joined SFLC.</description>
+    </item>
+    
+    <item>
+      <title>Read more!</title>
+      <link>https://theknowledgeseeker.in/about/more-about-me/</link>
+      <pubDate>Wed, 13 Feb 2019 23:42:17 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/about/more-about-me/</guid>
+      <description>Nice to see you here and thank you for showing interest to know me. To know what I have been doing these days, visit my Now page.
+Philomath! Yes, a philomath. A single word that describes me and my thirst for knowledge. Philomath originates from combining 2 greek words, &amp;ldquo;Philos and &amp;ldquo;math&amp;rdquo; that means, &amp;ldquo;lover of learning&amp;rdquo; or &amp;ldquo;knowledge seeker&amp;rdquo;.
+Languages I am multi-lingual and can speak a lot of languages, ranging from human comprehensible to computer languages.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -192,7 +192,7 @@
 <p>So what just happened?</p>
 <p>The above script executed a function over and over until all your system resources were exhausted leaving no memory (one of the critical requirement for any process to work, including your operating system.</p>
 <p>How does a few characters exhaust all the system memory?</p>
-<p>I will just explain how the above, when executed result into a total shutdown within minutes. But to understand the concepts, you need to be familiar of the programming concepts of recursion and process forking (yup, that&rsquo;s what the fork is in fork bomb).</p>
+<p>I will explain how the above script works in a moment which when executed result into a total shutdown within minutes. But to understand the concepts, you need to be familiar of the programming concepts of recursion and process forking (yup, that&rsquo;s what the fork is in fork bomb).</p>
 <p><strong>Recursion</strong>: In programming, when a function calls itself when  executed, this technique is know as recursion and a very useful concept when dealing with abstraction of logic. Our computer keeps track of all functions called with themselves on stack, in memory. Read the answer on <a href="https://stackoverflow.com/questions/25676961/understanding-how-recursive-functions-work">stackoverflow</a> to know more on <a href="https://www.freecodecamp.org/news/how-recursion-works-explained-with-flowcharts-and-a-video-de61f40cb7f9/">how recursion works</a>.</p>
 <p><img src="https://theknowledgeseeker.in/posts/images/recursion.jpg" alt="Recursion"></p>
 <p><strong>Forking</strong>: Operating system is a software that manages system resources and provide them to each process on your system. A <a href="https://en.wikipedia.org/wiki/Fork_(system_call)">process fork</a> is a duplicate of another existing process on the system, called the parent process and the forked process is known as the child process. Each child process has the same attributes and memory requirements as the parent process unless otherwise specified.</p>
@@ -203,8 +203,8 @@
 2.		func() | func() &amp;
 3. 	};
 4.	func()
-</code></pre></div><p>The concept behind fork bombing is really simple. To create as many process untill all the system memory is exhausted and system shuts down. Simple yet effective. It can be implemented in any language or system as long as we can use system call fork() to create process exhaustively and can be very frustrating to deal with on production servers if the attacker can access the shell.</p>
-<p>In python, fork bomb can be written as the following. It doesn&rsquo;t use the concept of recursion or piping but uses python built-in library os to call os.fork() function that creates child process infinite times.</p>
+</code></pre></div><p>The concept behind fork bombing is really simple. To create as many process untill all the system memory is exhausted and system shuts down. Simple yet effective. It can be implemented in any language or system as long as we can use system call fork() to create process exhaustively and can be very frustrating to deal with on production servers if the attacker can access the shell. Fork bombs can be written in many ways, such as the one below can be written in python.</p>
+<p>In python, fork bomb can be written as the following. It doesn&rsquo;t use the concept of recursion or piping but uses python built-in library os to call os.fork() function that creates child process infinite times. We can also use the same concept to create fork bombs in bash as well, calling fork() system call in an infinite loop.</p>
 <p>Fork bomb in Python:</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#fff;font-weight:bold">import</span> os
 <span style="color:#fff;font-weight:bold">while</span> True:
@@ -220,7 +220,7 @@
 <li><a href="https://malware.wikia.org/wiki/Fork_Bomb">Fork bombs in several languages</a></li>
 <li><a href="https://stackoverflow.com/questions/991142/how-does-this-bash-fork-bomb-work">Stackoverflow answer on fork bombs</a></li>
 </ul>
-<h4 id="tweethttpstwittercomintenttweetref_srctwsrc5etfwtextwonderhowforkbombswork3freadthissimpleandconciseonpostathttps3a2f2ftheknowledgeseekerin2fposts2flinux2ffork-bomb2fby40miphilomath"><a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&amp;text=Wonder+how+fork+bombs+work%3F+Read+this+simple+and+concise+on+post+at+https%3A%2F%2Ftheknowledgeseeker.in%2Fposts%2Flinux%2Ffork-bomb%2F+by+%40miphilomath">Tweet</a></h4>
+<h4 id="tweet-about-ithttpstwittercomintenttweetref_srctwsrc5etfwtextwonderhowforkbombswork3freadthissimpleandconciseonpostathttps3a2f2ftheknowledgeseekerin2fposts2flinux2ffork-bomb2fby40miphilomath"><a href="https://twitter.com/intent/tweet?ref_src=twsrc%5Etfw&amp;text=Wonder+how+fork+bombs+work%3F+Read+this+simple+and+concise+on+post+at+https%3A%2F%2Ftheknowledgeseeker.in%2Fposts%2Flinux%2Ffork-bomb%2F+by+%40miphilomath">Tweet about it</a></h4>
 
       </div>
 

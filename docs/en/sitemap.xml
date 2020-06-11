@@ -338,6 +338,18 @@
   </url>
   
   <url>
+    <loc>https://theknowledgeseeker.in/tags/books/</loc>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/review/</loc>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/series/reviews/</loc>
+  </url>
+  
+  <url>
     <loc>https://theknowledgeseeker.in/series/</loc>
     <xhtml:link
                 rel="alternate"
@@ -349,6 +361,10 @@
                 hreflang="en"
                 href="https://theknowledgeseeker.in/series/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/posts/reviews/quiet-the-power-of-introverts/</loc>
   </url>
   
 </urlset>

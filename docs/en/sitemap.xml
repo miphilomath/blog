@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://theknowledgeseeker.in/tags/books/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/categories/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://theknowledgeseeker.in/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theknowledgeseeker.in/categories/"
+                />
+  </url>
+  
+  <url>
     <loc>https://theknowledgeseeker.in/</loc>
-    <lastmod>2020-06-08T12:42:17+05:30</lastmod>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -18,23 +38,63 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/about/what-now/</loc>
-    <lastmod>2020-06-08T12:42:17+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/posts/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/categories/</loc>
-    <lastmod>2020-06-05T12:53:56+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/tags/review/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/series/reviews/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/categories/reviews/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/series/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://theknowledgeseeker.in/es/categories/"
+                href="https://theknowledgeseeker.in/es/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://theknowledgeseeker.in/categories/"
+                href="https://theknowledgeseeker.in/series/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://theknowledgeseeker.in/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theknowledgeseeker.in/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/posts/reviews/quiet-the-power-of-introverts/</loc>
+    <lastmod>2020-06-11T15:53:56+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/about/what-now/</loc>
+    <lastmod>2020-06-08T12:42:17+05:30</lastmod>
   </url>
   
   <url>
@@ -68,28 +128,8 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/posts/</loc>
-    <lastmod>2020-06-05T12:53:56+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://theknowledgeseeker.in/tags/script/</loc>
     <lastmod>2020-06-05T12:53:56+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/</loc>
-    <lastmod>2020-06-05T12:53:56+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://theknowledgeseeker.in/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theknowledgeseeker.in/tags/"
-                />
   </url>
   
   <url>
@@ -233,11 +273,6 @@
   </url>
   
   <url>
-    <loc>https://theknowledgeseeker.in/categories/reviews/</loc>
-    <lastmod>2019-02-22T22:22:56+05:30</lastmod>
-  </url>
-  
-  <url>
     <loc>https://theknowledgeseeker.in/categories/conferences/</loc>
     <lastmod>2019-02-15T00:33:55+05:30</lastmod>
   </url>
@@ -335,36 +370,6 @@
   <url>
     <loc>https://theknowledgeseeker.in/gallery/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/books/</loc>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/review/</loc>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/series/reviews/</loc>
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/series/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://theknowledgeseeker.in/es/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theknowledgeseeker.in/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/posts/reviews/quiet-the-power-of-introverts/</loc>
   </url>
   
 </urlset>

@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2020 12:53:56 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2020 15:53:56 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>reviews</title>
+      <link>https://theknowledgeseeker.in/categories/reviews/</link>
+      <pubDate>Thu, 11 Jun 2020 15:53:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/categories/reviews/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>howthingswork</title>
@@ -116,15 +125,6 @@
       <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
       
       <guid>https://theknowledgeseeker.in/categories/others/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>reviews</title>
-      <link>https://theknowledgeseeker.in/categories/reviews/</link>
-      <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/categories/reviews/</guid>
       <description></description>
     </item>
     

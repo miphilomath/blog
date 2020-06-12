@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jun 2020 12:53:56 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2020 15:53:56 +0530</lastBuildDate>
     
 	<atom:link href="https://theknowledgeseeker.in/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>books</title>
+      <link>https://theknowledgeseeker.in/tags/books/</link>
+      <pubDate>Thu, 11 Jun 2020 15:53:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>https://theknowledgeseeker.in/tags/review/</link>
+      <pubDate>Thu, 11 Jun 2020 15:53:56 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/tags/review/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>fork</title>
@@ -224,24 +242,6 @@
       <pubDate>Thu, 14 Feb 2019 14:33:49 +0530</pubDate>
       
       <guid>https://theknowledgeseeker.in/tags/general/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>books</title>
-      <link>https://theknowledgeseeker.in/tags/books/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/tags/books/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://theknowledgeseeker.in/tags/review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/tags/review/</guid>
       <description></description>
     </item>
     

@@ -73,6 +73,12 @@ disqusShortname = "philomath"
   url = "https://twitter.com/miphilomath"
 
 [[params.social]]
+  name = "Mastodon"
+  icon = "fab fa-mastodon"
+  weight = 3
+  url = "https://toots.dgplug.org/@philomath"
+
+[[params.social]]
   name = "Linkedin"
   icon = "fab fa-linkedin"
   weight = 4

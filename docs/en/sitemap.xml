@@ -3,13 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://theknowledgeseeker.in/tags/books/</loc>
-    <lastmod>2020-06-12T21:33:56+05:30</lastmod>
+    <loc>https://theknowledgeseeker.in/tags/anniversary/</loc>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://theknowledgeseeker.in/categories/</loc>
-    <lastmod>2020-06-12T21:33:56+05:30</lastmod>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -23,8 +23,23 @@
   </url>
   
   <url>
+    <loc>https://theknowledgeseeker.in/categories/experiences/</loc>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/ilugdelhi/</loc>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/meetup/</loc>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://theknowledgeseeker.in/</loc>
-    <lastmod>2020-06-12T21:33:56+05:30</lastmod>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -39,6 +54,36 @@
   
   <url>
     <loc>https://theknowledgeseeker.in/posts/</loc>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/</loc>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://theknowledgeseeker.in/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theknowledgeseeker.in/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/posts/community/treasure-hunt-anniversary/</loc>
+    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/posts/hey-its-email/</loc>
+    <lastmod>2020-06-24T23:51:27+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://theknowledgeseeker.in/tags/books/</loc>
     <lastmod>2020-06-12T21:33:56+05:30</lastmod>
   </url>
   
@@ -69,21 +114,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://theknowledgeseeker.in/series/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://theknowledgeseeker.in/tags/</loc>
-    <lastmod>2020-06-12T21:33:56+05:30</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://theknowledgeseeker.in/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://theknowledgeseeker.in/tags/"
                 />
   </url>
   

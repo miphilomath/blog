@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Learn about me! on Philomath&#39;s Lair!</title>
+    <title>About on Philomath&#39;s Lair!</title>
     <link>https://theknowledgeseeker.in/about/</link>
-    <description>Recent content in Learn about me! on Philomath&#39;s Lair!</description>
+    <description>Recent content in About on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 13 Feb 2019 23:42:17 +0530</lastBuildDate><atom:link href="https://theknowledgeseeker.in/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What Now?</title>
-      <link>https://theknowledgeseeker.in/about/what-now/</link>
-      <pubDate>Mon, 08 Jun 2020 12:42:17 +0530</pubDate>
+      <title>Work Work Work!</title>
+      <link>https://theknowledgeseeker.in/about/hire-me/</link>
+      <pubDate>Fri, 15 Jul 2022 16:42:17 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/about/what-now/</guid>
-      <description>This page is created to answer the most obnoxious question everyone ask each other, what are you doing now-a-days?
-I am creating this page after getting inspired from Derek Sivers. I will update this regularly with the last updated date on the top about my current professional work, personal projects, plans and books I have been reading. You can consider this page a live journal about myself.
-After my graduation, I joined SFLC.</description>
+      <guid>https://theknowledgeseeker.in/about/hire-me/</guid>
+      <description>I am always up for working on new challenges. If you feel I can help you out with your problem, feel free to reach out to me with the details.
+I am skilled in Linux development and Python software development practices with knowledge of cloud services. I have experience deploying different projects with CI/CD pipelines on AWS. I can provide consultancy services for your project architecture, infrastructure and help with task management within the team.</description>
     </item>
     
     <item>
       <title>Read more!</title>
       <link>https://theknowledgeseeker.in/about/more-about-me/</link>
-      <pubDate>Wed, 13 Feb 2019 23:42:17 +0530</pubDate>
+      <pubDate>Fri, 15 Jul 2022 13:42:17 +0530</pubDate>
       
       <guid>https://theknowledgeseeker.in/about/more-about-me/</guid>
-      <description>Nice to see you here and thank you for showing interest to know me. To know what I have been doing these days, visit my Now page.
-Philomath! Yes, a philomath. A single word that describes me and my thirst for knowledge. Philomath originates from combining 2 greek words, &amp;ldquo;Philos and &amp;ldquo;math&amp;rdquo; that means, &amp;ldquo;lover of learning&amp;rdquo; or &amp;ldquo;knowledge seeker&amp;rdquo;.
-Languages I am multi-lingual and can speak a lot of languages, ranging from human comprehensible to computer languages.</description>
+      <description>Nice to see you here and thank you for showing interest to know me. One word to describe me would be &amp;ldquo;philomath&amp;rdquo;.
+Yes, a philomath. A single word that describes me and my thirst for knowledge. Philomath originates from combining 2 greek words, &amp;ldquo;Philos and &amp;ldquo;math&amp;rdquo; that means, &amp;ldquo;lover of learning&amp;rdquo; or &amp;ldquo;knowledge seeker&amp;rdquo;.
+I love to learn new tools, techniques, concepts and everything that is fascinating. I learn from everyone and everything and don&amp;rsquo;t mind a constructive criticism.</description>
+    </item>
+    
+    <item>
+      <title>What Now?</title>
+      <link>https://theknowledgeseeker.in/about/what-now/</link>
+      <pubDate>Fri, 15 Jul 2022 12:42:17 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/about/what-now/</guid>
+      <description>#OpenToWork I am working as a backend software engineer at Essentia Softserv LLP since July, 2021. I am working on django based web application to perform batch processing. Other than this, I am mostly reading the books listed below. I visited United States in month of May to attend Pycon US 2022. It was a nice experience. I may or may not write blog post about my experience.
+I am open to work as Python engineer, Devops Consultant and as a freelancer.</description>
     </item>
     
   </channel>

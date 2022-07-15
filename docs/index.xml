@@ -6,7 +6,38 @@
     <description>Recent content on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2020 11:51:27 +0530</lastBuildDate><atom:link href="https://theknowledgeseeker.in/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 16:42:17 +0530</lastBuildDate><atom:link href="https://theknowledgeseeker.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Work Work Work!</title>
+      <link>https://theknowledgeseeker.in/about/hire-me/</link>
+      <pubDate>Fri, 15 Jul 2022 16:42:17 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/about/hire-me/</guid>
+      <description>I am always up for working on new challenges. If you feel I can help you out with your problem, feel free to reach out to me with the details.
+I am skilled in Linux development and Python software development practices with knowledge of cloud services. I have experience deploying different projects with CI/CD pipelines on AWS. I can provide consultancy services for your project architecture, infrastructure and help with task management within the team.</description>
+    </item>
+    
+    <item>
+      <title>Read more!</title>
+      <link>https://theknowledgeseeker.in/about/more-about-me/</link>
+      <pubDate>Fri, 15 Jul 2022 13:42:17 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/about/more-about-me/</guid>
+      <description>Nice to see you here and thank you for showing interest to know me. One word to describe me would be &amp;ldquo;philomath&amp;rdquo;.
+Yes, a philomath. A single word that describes me and my thirst for knowledge. Philomath originates from combining 2 greek words, &amp;ldquo;Philos and &amp;ldquo;math&amp;rdquo; that means, &amp;ldquo;lover of learning&amp;rdquo; or &amp;ldquo;knowledge seeker&amp;rdquo;.
+I love to learn new tools, techniques, concepts and everything that is fascinating. I learn from everyone and everything and don&amp;rsquo;t mind a constructive criticism.</description>
+    </item>
+    
+    <item>
+      <title>What Now?</title>
+      <link>https://theknowledgeseeker.in/about/what-now/</link>
+      <pubDate>Fri, 15 Jul 2022 12:42:17 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/about/what-now/</guid>
+      <description>#OpenToWork I am working as a backend software engineer at Essentia Softserv LLP since July, 2021. I am working on django based web application to perform batch processing. Other than this, I am mostly reading the books listed below. I visited United States in month of May to attend Pycon US 2022. It was a nice experience. I may or may not write blog post about my experience.
+I am open to work as Python engineer, Devops Consultant and as a freelancer.</description>
+    </item>
+    
     <item>
       <title>Treasure Hunting anniversary!</title>
       <link>https://theknowledgeseeker.in/posts/others/meetups/treasure-hunt-anniversary/</link>
@@ -25,17 +56,6 @@ Like all our meetups, we try to add a little fun in our meetups and in this one,
       
       <guid>https://theknowledgeseeker.in/posts/reviews/quiet-the-power-of-introverts/</guid>
       <description>Prelogue! Last Year i.e., 2019, I gifted myself a bundle of books waiting in my amazon shopping cart to be checked out accumulating over time by the suggestions of my friends and my reading list, on my birthday. But the year was a little busy for me and lot of books to read in such a less time and it took me an year before I got the time to pick the book, I was most excited to read.</description>
-    </item>
-    
-    <item>
-      <title>What Now?</title>
-      <link>https://theknowledgeseeker.in/about/what-now/</link>
-      <pubDate>Mon, 08 Jun 2020 12:42:17 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/about/what-now/</guid>
-      <description>This page is created to answer the most obnoxious question everyone ask each other, what are you doing now-a-days?
-I am creating this page after getting inspired from Derek Sivers. I will update this regularly with the last updated date on the top about my current professional work, personal projects, plans and books I have been reading. You can consider this page a live journal about myself.
-After my graduation, I joined SFLC.</description>
     </item>
     
     <item>
@@ -77,9 +97,9 @@ Learning is what keeps us alive. Learning is one of the many things that gives t
       <pubDate>Sat, 25 Jan 2020 01:01:56 +0530</pubDate>
       
       <guid>https://theknowledgeseeker.in/contact/</guid>
-      <description>Contact me! Contact me at the following links or fill this form to get in touch.
+      <description>Contact me at the following links to connect with me for any project collaboration, suggestions, feedbacks and work. Find more details to hire me here.
 I am digitally omnipresent and can be contacted anywhere, as long as the context matters. Following are my profiles that can be used to contact:
-Twitter: @miphilomath Gitub: @miphilomath Instagram: @miphilomath Linkedin: @emhtbnsl IRC: philomath on #dgplug, #learnandteach on freenode server Keybase: @philomath | Chat: https://keybase.io/philomath/chat Mail me at philomath [ @ ] [disroot] [dot] [org] If you want to know what I have been doing now-a days, visit my Now page.</description>
+Mail me at philomath [ @ ] [disroot] [dot] [org] IRC: philomath on #dgplug, #learnandteach on liberachat server Linkedin: @emhtbnsl Twitter: @miphilomath Gitub: @miphilomath Keybase: @philomath | Chat: https://keybase.</description>
     </item>
     
     <item>
@@ -161,17 +181,6 @@ I am listing down all the posts available there with their title and the hyperli
       
       <guid>https://theknowledgeseeker.in/projects/</guid>
       <description>Here you will find the projects I am working on or have worked on. I don&amp;rsquo;t have much to showcase other than my blog over here because many of side projects, I started to learn a new skill are still incomplete. I will update them here once I pick them again and finish what I&amp;rsquo;ve started. Or, I will publish few of the ideas of my side projects which you can pick up to learn a new skill.</description>
-    </item>
-    
-    <item>
-      <title>Read more!</title>
-      <link>https://theknowledgeseeker.in/about/more-about-me/</link>
-      <pubDate>Wed, 13 Feb 2019 23:42:17 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/about/more-about-me/</guid>
-      <description>Nice to see you here and thank you for showing interest to know me. To know what I have been doing these days, visit my Now page.
-Philomath! Yes, a philomath. A single word that describes me and my thirst for knowledge. Philomath originates from combining 2 greek words, &amp;ldquo;Philos and &amp;ldquo;math&amp;rdquo; that means, &amp;ldquo;lover of learning&amp;rdquo; or &amp;ldquo;knowledge seeker&amp;rdquo;.
-Languages I am multi-lingual and can speak a lot of languages, ranging from human comprehensible to computer languages.</description>
     </item>
     
     <item>

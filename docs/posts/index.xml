@@ -5,30 +5,17 @@
     <link>https://theknowledgeseeker.in/posts/</link>
     <description>Recent content in Posts on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2020 11:51:27 +0530</lastBuildDate>
-    
-	<atom:link href="https://theknowledgeseeker.in/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jun 2020 11:51:27 +0530</lastBuildDate><atom:link href="https://theknowledgeseeker.in/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Treasure Hunting anniversary!</title>
-      <link>https://theknowledgeseeker.in/posts/community/treasure-hunt-anniversary/</link>
+      <link>https://theknowledgeseeker.in/posts/others/meetups/treasure-hunt-anniversary/</link>
       <pubDate>Thu, 25 Jun 2020 11:51:27 +0530</pubDate>
       
-      <guid>https://theknowledgeseeker.in/posts/community/treasure-hunt-anniversary/</guid>
+      <guid>https://theknowledgeseeker.in/posts/others/meetups/treasure-hunt-anniversary/</guid>
       <description>Celebrating #ilugdelhi anniversary last year was more fun than any celebration we ever had. What did we do? You ask. We solved puzzles, hurdled through challenges and did the treasure hunting. The winners get goodies, a rucksack, calendar and stickers.
 So what&amp;rsquo;s the plan?
 Like all our meetups, we try to add a little fun in our meetups and in this one, we outdid ourselves. Thanks to all the volunteers who helped.</description>
-    </item>
-    
-    <item>
-      <title>Hey! It&#39;s my Email.</title>
-      <link>https://theknowledgeseeker.in/posts/hey-its-email/</link>
-      <pubDate>Wed, 24 Jun 2020 23:51:27 +0530</pubDate>
-      
-      <guid>https://theknowledgeseeker.in/posts/hey-its-email/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -48,7 +35,7 @@ Like all our meetups, we try to add a little fun in our meetups and in this one,
       <guid>https://theknowledgeseeker.in/posts/linux/fork-bomb/</guid>
       <description>Try and execute the following script in your bash terminal:
 :(){ :|:&amp;amp; };: Hold up!
- If you execute the above statement on your terminal it will result in fork bombing your system resulting into a total shutdown of your system. If you executed the above script, there is nothing to worry about. It&amp;rsquo;s no hack. Though above script is commonly used in Denial-Of-Service attack.
+If you execute the above statement on your terminal it will result in fork bombing your system resulting into a total shutdown of your system. If you executed the above script, there is nothing to worry about. It&amp;rsquo;s no hack. Though above script is commonly used in Denial-Of-Service attack.
 So what just happened?
 The above script executed a function over and over until all your system resources were exhausted leaving no memory (one of the critical requirement for any process to work, including your operating system.</description>
     </item>
@@ -83,7 +70,7 @@ Learning is what keeps us alive. Learning is one of the many things that gives t
 Ever stuck confused thinking on what project to pick up next when you have lots of ideas and only a weekend to work on? Well it is common problem with me.
 Image of my pick your dare!
 What can be your dare?
- Projects Blogs to write Books to read Hobbies to pick  Software version? Well, we can have everything in software, even the reality (matrix) but I love the game of picking the dare with something physical like lottery or waffle ticket.</description>
+Projects Blogs to write Books to read Hobbies to pick Software version? Well, we can have everything in software, even the reality (matrix) but I love the game of picking the dare with something physical like lottery or waffle ticket.</description>
     </item>
     
     <item>
@@ -102,7 +89,7 @@ Rationale The rationale for making a standard protocol for all coffee driven pro
       <pubDate>Fri, 22 Feb 2019 22:22:56 +0530</pubDate>
       
       <guid>https://theknowledgeseeker.in/posts/others/naruto-vs-dbz/</guid>
-      <description>Naruto vs Dragon Ball Z! Yes, You guessed it right. It&amp;rsquo;s the comparison between naruto vs Dragon Ball Z in the world of anime. It is true that even though most of you have already watched Naruto, Naruto Shippuden and Boruto, I haven&amp;rsquo;t even finished my Naruto series. But now I regret, why I didn&amp;rsquo;t watch this amazing series that pumps my blood even in the most sensual, non-action scenes. I didn&amp;rsquo;t watch Naruto before because of its reputation of very lengthy series and I didn&amp;rsquo;t want to Torrent Download or Torrent Stream these many episodes (I try to avoid torrenting as much as possible).</description>
+      <description>Naruto vs Dragon Ball Z! Yes, You guessed it right. It&amp;rsquo;s the comparison between naruto vs Dragon Ball Z in the world of anime. It is true that even though most of you have already watched Naruto, Naruto Shippuden and Boruto, I haven&amp;rsquo;t even finished my Naruto series. But now I regret, why I didn&amp;rsquo;t watch this amazing series that pumps my blood even in the most sensual, non-action scenes.</description>
     </item>
     
     <item>
@@ -130,8 +117,7 @@ This blog post is a long due, waiting in my draft for ages, for me to complete i
       <pubDate>Thu, 14 Feb 2019 14:33:49 +0530</pubDate>
       
       <guid>https://theknowledgeseeker.in/posts/blog-announcement/</guid>
-      <description>My voice! We all have something to say and share our views with others, right? We all want to speak our opinions without any hesitation, and share our point of view, don&amp;rsquo;t we? And still, at times we don&amp;rsquo;t share everything we want to. We all have something to say, don&amp;rsquo;t we? And we all speak our feelings, our emotions whenever we want to share something with someone, right?
-But at times, based on the situation, either we don&amp;rsquo;t put forward our feelings, our views and stays silent, which is by the way, not good.</description>
+      <description>My voice! We all have something to say and share our views with others, right? We all want to speak our opinions without any hesitation, and share our point of view, don&amp;rsquo;t we? And still, at times we don&amp;rsquo;t share everything we want to. We all have something to say, don&amp;rsquo;t we? And we all speak our feelings, our emotions whenever we want to share something with someone, right?</description>
     </item>
     
     <item>
@@ -141,7 +127,7 @@ But at times, based on the situation, either we don&amp;rsquo;t put forward our 
       
       <guid>https://theknowledgeseeker.in/posts/older-posts.md/</guid>
       <description>Let the past be in past!
- If you are looking for posts older than the ones present here? You can find them at https://phi2infinity.blogspot.in. All the older posts will be updated there only. I may or may not migrate the posts back to this website. Meanwhile all my writings are compiled at one place on github.
+If you are looking for posts older than the ones present here? You can find them at https://phi2infinity.blogspot.in. All the older posts will be updated there only. I may or may not migrate the posts back to this website. Meanwhile all my writings are compiled at one place on github.
 To know more, read the moving announcement here.
 I am listing down all the posts available there with their title and the hyperlink to the original blog.</description>
     </item>

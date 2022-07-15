@@ -1,196 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
 
-    <meta name="author" content="Mohit Bansal">
-    <meta name="description" content="In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC.">
-    <meta name="keywords" content="blog, website, developer, philomath, learner, portfolio">
 
-    
 
-    <meta name="twitter:card" content="summary"/>
+<meta name="author" content="Mohit Bansal">
+<meta name="description" content="In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC.">
+<meta name="keywords" content="blog, website, developer, philomath, learner, portfolio">
+
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ansible101"/>
 <meta name="twitter:description" content="In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC."/>
 
-    <meta property="og:title" content="Ansible101" />
+<meta property="og:title" content="Ansible101" />
 <meta property="og:description" content="In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by @trishna_g at #dgplug on freenode server, IRC." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://theknowledgeseeker.in/posts/ansible101/" />
+<meta property="og:url" content="https://theknowledgeseeker.in/posts/ansible101/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2019-02-14T19:36:52+05:30" />
 <meta property="article:modified_time" content="2019-02-14T19:36:52+05:30" />
 
 
-    
-      <base href="https://theknowledgeseeker.in/posts/ansible101/">
-    
-    <title>
-  Ansible101 · Philomath&#39;s Lair!
-</title>
 
-    
-      <link rel="canonical" href="https://theknowledgeseeker.in/posts/ansible101/">
-    
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <title>Philomath&#39;s Lair!</title>
 
-    
-      
-      
-      <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.3219ef62ae52679b7a9c19043171c3cd9f523628c2a65f3ef247ee18836bc90b.css" integrity="sha256-MhnvYq5SZ5t6nBkEMXHDzZ9SNijCpl8&#43;8kfuGINryQs=" crossorigin="anonymous" media="screen" />
-    
+  
+  <link rel="canonical" href="https://theknowledgeseeker.in/posts/ansible101/">
+  
 
-    
+  <link rel="preload" href="https://theknowledgeseeker.in/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
 
-    
-
-    
-
-    
-
-    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="16x16">
-
-    <meta name="generator" content="Hugo 0.72.0" />
-
-    
-    <script type="text/javascript">
-      var _paq = window._paq || [];
-       
-      _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-      _paq.push(["setDomains", ["*.theknowledgeseeker.in","*.blog.theknowledgeseeker.in"]]);
-      _paq.push(["setDoNotTrack", false]);
-      _paq.push(["disableCookies"]);
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="https://who.theknowledgeseeker.in/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '2']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <noscript><p><img src="https://who.theknowledgeseeker.in/matomo.php?idsite=2&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-    
-
-  </head>
 
   
   
-  <body class="colorscheme-light"
-        onload=""
-  >
-    <main class="wrapper">
-      <nav class="navigation">
+  <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+  
+  
+    
+    
+    <link rel="stylesheet" href="https://theknowledgeseeker.in/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+   
+
+
+
+
+  <link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://theknowledgeseeker.in/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://theknowledgeseeker.in/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://theknowledgeseeker.in/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://theknowledgeseeker.in/site.webmanifest">
+<link rel="mask-icon" href="https://theknowledgeseeker.in/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+  
+
+  <meta name="generator" content="Hugo 0.100.0" />
+
+
+  
+
+</head>
+
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="https://theknowledgeseeker.in/">
       Philomath&#39;s Lair!
     </a>
     
-    <input type="checkbox" id="menu-toggle" />
-    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
-    <ul class="navigation-list">
-      
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://theknowledgeseeker.in/about/">About</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://theknowledgeseeker.in/posts/">Blog</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://theknowledgeseeker.in/projects/">Projects</a>
-          </li>
-        
-          <li class="navigation-item">
-            <a class="navigation-link" href="https://theknowledgeseeker.in/contact/">Contact</a>
-          </li>
-        
-      
-      
-        
-        
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
         
           
-        
-          
-            
-              <li class="navigation-item menu-separator">
-                <span>|</span>
-              </li>
-              
-            
             <li class="navigation-item">
-              <a href="https://theknowledgeseeker.in/es/">Espanol</a>
+              <a class="navigation-link" href="https://theknowledgeseeker.in/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://theknowledgeseeker.in/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://theknowledgeseeker.in/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://theknowledgeseeker.in/contact/">Contact</a>
             </li>
           
         
-      
-    </ul>
+        
+      </ul>
     
   </section>
 </nav>
 
 
-      <div class="content">
-        
+    <div class="content">
+      
   <section class="container post">
     <article>
       <header>
         <div class="post-title">
-          <h1 class="title">Ansible101</h1>
+          <h1 class="title">
+            <a class="title-link" href="https://theknowledgeseeker.in/posts/ansible101/">
+              Ansible101
+            </a>
+          </h1>
         </div>
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fas fa-calendar"></i>
-              <time datetime='2019-02-14T19:36:52&#43;05:30'>
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-02-14T19:36:52&#43;05:30">
                 February 14, 2019
               </time>
             </span>
             <span class="reading-time">
-              <i class="fas fa-clock"></i>
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
               6-minute read
             </span>
           </div>
+          
           <div class="categories">
-  <i class="fas fa-folder"></i>
+  <i class="fa fa-folder" aria-hidden="true"></i>
     <a href="https://theknowledgeseeker.in/categories/devops/">devops</a>
       <span class="separator">•</span>
     <a href="https://theknowledgeseeker.in/categories/technical/">technical</a></div>
 
           <div class="tags">
-  <i class="fas fa-tag"></i>
-    <a href="https://theknowledgeseeker.in/tags/ansible/">ansible</a>
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://theknowledgeseeker.in/tags/ansible/">ansible</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://theknowledgeseeker.in/tags/automation/">automation</a>
+    <span class="tag">
+      <a href="https://theknowledgeseeker.in/tags/automation/">automation</a>
+    </span>
       <span class="separator">•</span>
-    <a href="https://theknowledgeseeker.in/tags/tutorial/">tutorial</a></div>
+    <span class="tag">
+      <a href="https://theknowledgeseeker.in/tags/tutorial/">tutorial</a>
+    </span></div>
 
         </div>
       </header>
 
       <div>
         
-        <p>In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by <a href="https://twitter.com/trishna_g">@trishna_g</a> at <a href="https://dgplug.org">#dgplug</a> on freenode server, IRC. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&quot;</a> section to try Ansible right now.</p>
-<h2 id="lets-start">Let&rsquo;s Start</h2>
+        <p>In the realm of Devops, where there is always fight to provide the better and efficient ways of production in an enterprise, Ansible is one of the solution to help enterprise achieve that. This blog post will brief you about what ansible is and how learning ansible can save hours of debugging and setting up the same configurations again and again. Later this post will brief the &ldquo;Ansible 101&rdquo; session taken by <a href="https://twitter.com/trishna_g">@trishna_g</a> at <a href="https://dgplug.org">#dgplug</a> on freenode server, IRC. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&rdquo;</a> section to try Ansible right now.</p>
+<h2 id="lets-start">
+  Let&rsquo;s Start
+  <a class="heading-link" href="#lets-start">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p>As a developer, atleast once in our lifetime, we all faced the frustration of configuring our systems/servers with same configurations again and again, due to system failures, or while changing to another operating system. If you know what I mean, that configuration and system setup process can be tiresome and boring, sucking all your excitement and energy to work on the project later on, right?</p>
 <p>Or as a user, any time, we change our Operating System, upgrade our system or recover from any failure, we have to setup our system again, as it was before. All the services, packages, libraries and most important system configurations should be as it was, so that we can work more efficiently on our project rather than worrying about configurations and missing packages during development.</p>
 <p>And we all thought, that&rsquo;s the way it has to be. Well, not exactly. There is a solution to this problem, by automating the process, using Ansible. Ansible is what we all heard of, every now and then, but if didn&rsquo;t, may be, that&rsquo;s what you&rsquo;re lacking.</p>
-<h2 id="ansible-is-the-need-of-the-hour">Ansible is the need of the hour!</h2>
+<h2 id="ansible-is-the-need-of-the-hour">
+  Ansible is the need of the hour!
+  <a class="heading-link" href="#ansible-is-the-need-of-the-hour">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p>In the enterprise, there are many tools that are needed to maintain the efficiency and workflow. And if we have to configure those 100s of systems manually, will you? I mean, it would be so easy if we could just instruct one of the system to configure all the remaining ones. Ansible does just the job for you, automating these tiresome and boring work for you.</p>
 <p>Ansible has various benefits, over manual configurations of 100s of systems. With the help of Ansible, you can easily setup all the systems at once, with same configuration and in case of any changes later, you just need to update the Ansible Playbook for all systems to update. Easy, no? Ansible is one of the criticial tools, used in enterprises and thus, definitely worth your time. In case of users, even to configure single system, learning Ansible might feel a bit overhead, but it will be helpful in future, when you have to recover from any failures, switch to different operating system etc.</p>
 <p>To find more on, why Ansible, check their official page <a href="https://www.ansible.com/overview/it-automation">here</a>.</p>
-<h2 id="getting-your-facts-straight">Getting your facts straight!</h2>
-<p>It goes without saying, if foundation&rsquo;s strong, so the building is! Let&rsquo;s work on our foundations of Ansible first. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&quot;</a> section to give it a try and come back here to fill in the gaps later. Though I prefer the former method. To understand on how Ansible works, check out their webpage, <a href="https://www.ansible.com/overview/how-ansible-works">here</a>.</p>
+<h2 id="getting-your-facts-straight">
+  Getting your facts straight!
+  <a class="heading-link" href="#getting-your-facts-straight">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>It goes without saying, if foundation&rsquo;s strong, so the building is! Let&rsquo;s work on our foundations of Ansible first. Feel free to skip to <a href="#are-we-having-fun-yet">&ldquo;Are we having fun yet?&rdquo;</a> section to give it a try and come back here to fill in the gaps later. Though I prefer the former method. To understand on how Ansible works, check out their webpage, <a href="https://www.ansible.com/overview/how-ansible-works">here</a>.</p>
 <p>Few Keywords used in the realm of Ansible:</p>
 <ol>
 <li><strong>Inventory</strong> is the list of the computer systems you want to configure using your host system.</li>
@@ -198,15 +213,25 @@
 <li><strong>Modules</strong> are the pre-written programs in the Ansible, to perform common tasks such as Ping (to test the connectivity). List of modules can be found at <a href="https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html">here</a>.</li>
 </ol>
 <p>TL;DR? In brief, A control system is used to configure your other systems known as Managed nodes, connected through a secured remote connection protocol, such SSH or Kerberos. All the systems enlisted in an inventory files can be controlled/managed by the control node, to execute a set of instructions or programs known as Ansible Modules using playbook written in a Markup Language (YAML) to setup, and configure the managed nodes at once.</p>
-<h2 id="are-we-having-fun-yet">Are we having fun yet?</h2>
+<h2 id="are-we-having-fun-yet">
+  Are we having fun yet?
+  <a class="heading-link" href="#are-we-having-fun-yet">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
 <p>What&rsquo;s the use of learning so many intricacies if we don&rsquo;t know how to use them, right? So, Let&rsquo;s get started! Feel free to follow the official Ansible <a href="https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html">Documentation</a>.</p>
-<h5 id="install-and-setting-up">Install and setting up</h5>
+<h5 id="install-and-setting-up">
+  Install and setting up
+  <a class="heading-link" href="#install-and-setting-up">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h5>
 <p>For your linux distribution, use the default package manager to install the &ldquo;ansible&rdquo; package. To install from source, follow the official documentation [here][]. In this case, we will take fedora as our operating system.</p>
 <ol>
 <li>
 <p>Install using package manager or follow Official guide,</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dnf install ansible 
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo dnf install ansible 
+</span></span></code></pre></div></li>
 <li>
 <p>Check the version of your ansible, and make sure, it is no older than 2.6.0 using  <code>ansible --version</code>.</p>
 </li>
@@ -215,47 +240,52 @@
 <ol>
 <li>
 <p>Set up the SSH Key on your system and copy that key to your managed hosts, in this case your local machine, in order to allow your control node to connect with managed hosts, using,</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id &lt;username&gt;@127.0.0.1
-</code></pre></div><p>In case you have multiple keys on your system,</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id -i &lt;absolutepath_to_key&gt; &lt;username&gt;@127.0.0.1
-</code></pre></div><p>You can verify the connection by SSH-ing into the managed host.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh-copy-id &lt;username&gt;@127.0.0.1
+</span></span></code></pre></div><p>In case you have multiple keys on your system,</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ssh-copy-id -i &lt;absolutepath_to_key&gt; &lt;username&gt;@127.0.0.1
+</span></span></code></pre></div><p>You can verify the connection by SSH-ing into the managed host.</p>
 </li>
 <li>
 <p>Execute the following instruction , where <code>all -i &quot;localhost&quot;</code> signifies all the nodes in inventory &ldquo;localhost&rdquo; to be used, defining &ldquo;local&rdquo; <a href="https://docs.ansible.com/ansible/latest/plugins/connection.html#plugin-list">connection protocol</a> using <code>-c local</code> to execute module &ldquo;ping&rdquo;.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible all -i <span style="color:#0ff;font-weight:bold">&#34;localhost,&#34;</span> -c <span style="color:#fff;font-weight:bold">local</span> -m ping
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ansible all -i <span style="font-style:italic">&#34;localhost,&#34;</span> -c local -m ping
+</span></span></code></pre></div></li>
 <li>
 <p>Now, execute <code>shell</code> module to invoke <code>echo</code> program with message &ldquo;hello&rdquo;.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible all -i <span style="color:#0ff;font-weight:bold">&#34;localhost,&#34;</span> -c <span style="color:#fff;font-weight:bold">local</span> -m shell -a <span style="color:#0ff;font-weight:bold">&#39;/bin/echo hello&#39;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ansible all -i <span style="font-style:italic">&#34;localhost,&#34;</span> -c local -m shell -a <span style="font-style:italic">&#39;/bin/echo hello&#39;</span>
+</span></span></code></pre></div></li>
 <li>
 <p>Create a file in any directory named, &ldquo;<strong>hosts</strong>&rdquo; and write, &ldquo;<em>localhost ansible_connection=local</em>&rdquo; within the file. This file will now act as inventory for further demonstration. To execute the shell using the hosts described in the &ldquo;hosts&rdquo; file, run,</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible all -i hosts -m shell -a <span style="color:#0ff;font-weight:bold">&#39;/bin/echo hello&#39;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ansible all -i hosts -m shell -a <span style="font-style:italic">&#39;/bin/echo hello&#39;</span>
+</span></span></code></pre></div></li>
 <li>
 <p>The way we added &ldquo;<em>localhost</em>&rdquo; in our custom inventory, we call it &ldquo;<em>ungrouped</em>&rdquo; hosts.</p>
 </li>
 <li>
 <p>To create a group of systems, say webserver, to control all systems from a particular group, we add the group as <code>[groupname]</code> in the above line. Your file should have the following content</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[groupname]
-localhost ansible_connection=local
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>[groupname]
+</span></span><span style="display:flex;"><span>localhost ansible_connection=local
+</span></span></code></pre></div></li>
 <li>
 <p>Now in the &ldquo;hosts&rdquo; file, on the top of your localhost add <code>[webserver]</code> for <code>[groupname]</code>. <strong>Do not put it on the same line</strong> and run the following command.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible webserver -i hosts -m shell -a <span style="color:#0ff;font-weight:bold">&#39;/bin/echo hello&#39;</span>
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ansible webserver -i hosts -m shell -a <span style="font-style:italic">&#39;/bin/echo hello&#39;</span>
+</span></span></code></pre></div></li>
 <li>
 <p>Now, create a playbook, by creating a file, <code>demo.yml</code> in the same directory with contents as <a href="https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67">https://gist.github.com/trishnaguha/18352fc138168111d0d015e84c3ace67</a> and execute all the above commands using yaml by executing following instruction on shell.</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ansible-playbook demo.yml -i hosts -v
-</code></pre></div><div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">- <span style="color:#fff;font-weight:bold">hosts</span>: webserver
-  <span style="color:#fff;font-weight:bold">connection</span>: local
-   
-  <span style="color:#fff;font-weight:bold">tasks</span>:
-  - <span style="color:#fff;font-weight:bold">shell</span>: /bin/echo hello
-</code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ansible-playbook demo.yml -i hosts -v
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>- <span style="font-weight:bold">hosts</span>: webserver
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">connection</span>: local
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">tasks</span>:
+</span></span><span style="display:flex;"><span>  - <span style="font-weight:bold">shell</span>: /bin/echo hello
+</span></span></code></pre></div></li>
 </ol>
 <p>That&rsquo;s all for now, demonstrating about Ansible.</p>
-<h3 id="filling-the-gaps">Filling the gaps!</h3>
+<h3 id="filling-the-gaps">
+  Filling the gaps!
+  <a class="heading-link" href="#filling-the-gaps">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
 <p>So, Yes! Ansible is one of the most important Devops tools, that will come handy not only for enterprises but also for individual developers. Full logs for the session can be found at dgplug.org/irclogs. Join us at #dgplug on freenode server IRC</p>
 <p>If you find any inconsistency on the content, ping me over IRC. I am philomath over freenode server. You can also find me at #dgplug on freenode server.</p>
 
@@ -268,7 +298,7 @@ localhost ansible_connection=local
 
         <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -291,55 +321,82 @@ localhost ansible_connection=local
       </footer>
     </article>
 
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ['$', '$'], ['\\(', '\\)']
-        ],
-        processEscapes: true,
-        processEnvironments: true
-      },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
       }
-    };
-  </script>
+    );"></script>
   </section>
 
-      </div>
+    </div>
 
-      
-  <footer class="footer">
-    <section class="container">
-      
-        <p>Make yourself useful and Learn!</p>
-      
-      
-        ©
-        
-        2020
-         Mohit Bansal 
-      
-      
-         · 
-        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-      
-      
-    </section>
-  </footer>
-
-    </main>
-
+    <footer class="footer">
+  <section class="container">
+    ©
     
-
+      2020 -
     
-
+    2022
+     Mohit Bansal 
+    ·
     
+      Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
 
-  </body>
+  </main>
+
+  
+  
+  <script src="https://theknowledgeseeker.in/js/coder.min.f411a1043e37c7c14dfb03f4d94d60d9ee69cfa413b16d0fd4f28695babb82bb.js" integrity="sha256-9BGhBD43x8FN&#43;wP02U1g2e5pz6QTsW0P1PKGlbq7grs="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <script type="application/javascript">
+  var _paq = window._paq = window._paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://who.theknowledgeseeker.in/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  
+
+  
+</body>
 
 </html>

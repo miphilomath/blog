@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Jun 2020 11:51:27 +0530</lastBuildDate><atom:link href="https://theknowledgeseeker.in/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 20:32:10 +0530</lastBuildDate><atom:link href="https://theknowledgeseeker.in/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All about the process!</title>
+      <link>https://theknowledgeseeker.in/posts/operatingsystem/what-is-a-process/</link>
+      <pubDate>Fri, 15 Jul 2022 20:32:10 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/operatingsystem/what-is-a-process/</guid>
+      <description>In this blog post, we will learn about what a process is, in computing context and how operating system is responsible for managing the multiple processes running in the system to use the computer hardware (processor and peripherals) optimally.
+Operating system is a very sophisticated and critical software that enables the user to use their computer most efficiently. Users run their program / tools on the computers by executing a set of instructions to achieve an output.</description>
+    </item>
+    
     <item>
       <title>Treasure Hunting anniversary!</title>
       <link>https://theknowledgeseeker.in/posts/others/meetups/treasure-hunt-anniversary/</link>

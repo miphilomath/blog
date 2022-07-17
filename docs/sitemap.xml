@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://theknowledgeseeker.in/posts/operatingsystem/what-is-a-process/</loc>
+    <lastmod>2022-07-15T20:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/series/operating-system/</loc>
+    <lastmod>2022-07-15T20:32:10+05:30</lastmod>
+  </url><url>
     <loc>https://theknowledgeseeker.in/</loc>
-    <lastmod>2022-07-15T16:42:17+05:30</lastmod>
+    <lastmod>2022-07-15T20:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/posts/</loc>
+    <lastmod>2022-07-15T20:32:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/series/</loc>
+    <lastmod>2022-07-15T20:32:10+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/about/hire-me/</loc>
     <lastmod>2022-07-15T16:42:17+05:30</lastmod>
@@ -29,14 +41,14 @@
     <loc>https://theknowledgeseeker.in/tags/meetup/</loc>
     <lastmod>2020-06-25T11:51:27+05:30</lastmod>
   </url><url>
-    <loc>https://theknowledgeseeker.in/posts/</loc>
-    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
-  </url><url>
     <loc>https://theknowledgeseeker.in/tags/</loc>
     <lastmod>2020-06-25T11:51:27+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/posts/others/meetups/treasure-hunt-anniversary/</loc>
     <lastmod>2020-06-25T11:51:27+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/series/book-reviews/</loc>
+    <lastmod>2020-06-12T21:33:56+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/tags/books/</loc>
     <lastmod>2020-06-12T21:33:56+05:30</lastmod>
@@ -44,13 +56,7 @@
     <loc>https://theknowledgeseeker.in/tags/review/</loc>
     <lastmod>2020-06-12T21:33:56+05:30</lastmod>
   </url><url>
-    <loc>https://theknowledgeseeker.in/series/reviews/</loc>
-    <lastmod>2020-06-12T21:33:56+05:30</lastmod>
-  </url><url>
     <loc>https://theknowledgeseeker.in/categories/reviews/</loc>
-    <lastmod>2020-06-12T21:33:56+05:30</lastmod>
-  </url><url>
-    <loc>https://theknowledgeseeker.in/series/</loc>
     <lastmod>2020-06-12T21:33:56+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/posts/reviews/quiet-the-power-of-introverts/</loc>

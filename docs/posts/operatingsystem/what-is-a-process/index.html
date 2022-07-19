@@ -163,7 +163,7 @@
 
       <div>
         
-        <p>In this blog post, we will learn about what a process is, in computing context and how operating system is responsible for managing the multiple processes running in the system to use the computer hardware (processor and peripherals) optimally.</p>
+        <p>In this blog post, we will learn about what a process is in computing context and how operating system is responsible for managing the multiple processes running in the system to use the computer hardware (processor and peripherals) optimally.</p>
 <p>Operating system is a very sophisticated and critical software that enables the user to use their computer most efficiently. Users run their program / tools on the computers by executing a set of instructions to achieve an output. But computer cannot execute program directly, and needs the help of operating system to do so. When a user executes a program, a process is created to perform the task and is managed by operating system to use the computer hardware most efficiently among various such processes.</p>
 <!-- A more detailed description on operating system, types of operating system and evolution of the same can be found here. (Reference to another blog post) How computers were large monsters, with manual switches to execute the instructions, the task people used to perform are now done by operating system. Especially useful in muli-tasking and multiuser operating system. -->
 <p><strong>Note:</strong> Computer (processors) needs to load the programs in primary memory i.e. RAM in order to execute or run them</p>
@@ -173,8 +173,8 @@
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h1>
-<p>So, what is a process? Everyone who wants to understand how things work on your computer and how operating system works should be able to explain what a process is.</p>
-<p>By definition, process is a piece of software (computer program) that is under execution by your computer. But what happens when a program is under execution? When a program is executed by your computer, the program is loaded into the primary memory with which your processor (CPU) interacts with to perform the task (instructions) defined in the program code.</p>
+<p>So, what is a process? Anyone who wants to understand how things work on your computer and how operating system works should be able to explain what a process is.</p>
+<p>By definition, process is a piece of software (computer program) that is under execution by your computer. But what is meant by program under execution? When a program is executed by your computer, the program is loaded into the primary memory and the processor (CPU) executes the instructions defined in the program code line by line to perform the task. The program code needs to computer executable i.e., available in a language understandable to computer (binary or assembly).</p>
 <p><strong>What else?</strong></p>
 <p>Program code is only a small textual part of the process. Along with program code, much more information is loaded into the memory (RAM) for it to be executed by the processor. Process includes details required to manage and keep track of all the instructions and variables used by the process, in order to help the operating system manage them efficiently. Process also includes its current state, memory usage, input/output status and much more. In summary, process contains the following details and more.</p>
 <ol>
@@ -249,14 +249,15 @@
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h4>
-<p>Short term scheduler moves the process from ready state into running state.</p>
+<p>Short term scheduler selects the next process to be executed by Processor which is then loaded into the memory by Dispatcher.</p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/22_.png" alt="Process Scheduling"></p>
 <h4 id="context-switching">
   Context Switching
   <a class="heading-link" href="#context-switching">
     <i class="fa fa-link" aria-hidden="true"></i>
   </a>
 </h4>
-<p>When one process is replaced by another process from the memory to be executed by CPU, it is known as context switching. The whole procedure saves the context of one state in its PCB and loads the context (details) from PCB of another process, which is done by <strong>dispatcher</strong>.</p>
+<p>When one process is replaced by another process from the memory to be executed by CPU, it is known as context switching. The whole procedure saves the context of one state in its PCB and loads the context (details) from PCB of another process, which is done by <strong>dispatcher</strong> (Read references)</p>
 <br />
 <hr>
 <p>Some backstory.</p>
@@ -270,7 +271,9 @@
 <li><a href="https://tldp.org/LDP/LG/issue23/flower/intro.html">Introduction to processes</a>: This blog covers everything one needs to know about computing processes.</li>
 <li><a href="https://tldp.org/LDP/LG/issue23/flower/psimage.html">Process image</a></li>
 <li><a href="https://tldp.org/LDP/LG/issue23/flower/context.html">Process and Process context</a></li>
-<li><a href="https://stackoverflow.com/questions/35147243/process-context-vs-process-control-block">Process context vs Process control Block</a></li>
+<li><a href="https://stackoverflow.com/a/35160668">Process context vs Process control Block</a></li>
+<li><a href="https://www.geeksforgeeks.org/difference-between-dispatcher-and-scheduler/">Process Schedulers vs Dispatchers</a></li>
+<li><a href="https://stackoverflow.com/a/13600633">Why I/O process don&rsquo;t need CPU</a></li>
 <li><a href="https://www.baeldung.com/cs/os-program-counter-vs-instruction-register">https://www.baeldung.com/cs/os-program-counter-vs-instruction-register</a></li>
 </ul>
 

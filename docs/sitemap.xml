@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://theknowledgeseeker.in/</loc>
+    <lastmod>2022-07-31T22:42:17+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/recommends/</loc>
+    <lastmod>2022-07-31T22:42:17+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/categories/</loc>
+    <lastmod>2022-07-25T15:03:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/categories/insights/</loc>
+    <lastmod>2022-07-25T15:03:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/categories/others/</loc>
+    <lastmod>2022-07-25T15:03:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/posts/</loc>
+    <lastmod>2022-07-25T15:03:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/series/</loc>
+    <lastmod>2022-07-25T15:03:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/series/shorts/</loc>
+    <lastmod>2022-07-25T15:03:10+05:30</lastmod>
+  </url><url>
+    <loc>https://theknowledgeseeker.in/posts/short-posts/scope-of-improvement/</loc>
+    <lastmod>2022-07-25T15:03:10+05:30</lastmod>
+  </url><url>
     <loc>https://theknowledgeseeker.in/posts/operatingsystem/what-is-a-process/</loc>
     <lastmod>2022-07-15T20:32:10+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/series/operating-system/</loc>
-    <lastmod>2022-07-15T20:32:10+05:30</lastmod>
-  </url><url>
-    <loc>https://theknowledgeseeker.in/</loc>
-    <lastmod>2022-07-15T20:32:10+05:30</lastmod>
-  </url><url>
-    <loc>https://theknowledgeseeker.in/posts/</loc>
-    <lastmod>2022-07-15T20:32:10+05:30</lastmod>
-  </url><url>
-    <loc>https://theknowledgeseeker.in/series/</loc>
     <lastmod>2022-07-15T20:32:10+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/about/hire-me/</loc>
@@ -27,9 +45,6 @@
     <lastmod>2022-07-15T12:42:17+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/tags/anniversary/</loc>
-    <lastmod>2020-06-25T11:51:27+05:30</lastmod>
-  </url><url>
-    <loc>https://theknowledgeseeker.in/categories/</loc>
     <lastmod>2020-06-25T11:51:27+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/categories/experiences/</loc>
@@ -98,9 +113,6 @@
     <loc>https://theknowledgeseeker.in/categories/protocol/</loc>
     <lastmod>2020-05-30T16:19:12+05:30</lastmod>
   </url><url>
-    <loc>https://theknowledgeseeker.in/categories/insights/</loc>
-    <lastmod>2020-01-25T16:21:00+05:30</lastmod>
-  </url><url>
     <loc>https://theknowledgeseeker.in/tags/learning/</loc>
     <lastmod>2020-01-25T16:21:00+05:30</lastmod>
   </url><url>
@@ -162,9 +174,6 @@
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/posts/others/naruto-vs-dbz/</loc>
-    <lastmod>2019-02-22T22:22:56+05:30</lastmod>
-  </url><url>
-    <loc>https://theknowledgeseeker.in/categories/others/</loc>
     <lastmod>2019-02-22T22:22:56+05:30</lastmod>
   </url><url>
     <loc>https://theknowledgeseeker.in/categories/conferences/</loc>

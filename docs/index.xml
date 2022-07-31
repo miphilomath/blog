@@ -6,7 +6,18 @@
     <description>Recent content on Philomath&#39;s Lair!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 Jul 2022 20:32:10 +0530</lastBuildDate><atom:link href="https://theknowledgeseeker.in/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 31 Jul 2022 22:42:17 +0530</lastBuildDate><atom:link href="https://theknowledgeseeker.in/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The scope of improvement!</title>
+      <link>https://theknowledgeseeker.in/posts/short-posts/scope-of-improvement/</link>
+      <pubDate>Mon, 25 Jul 2022 15:03:10 +0530</pubDate>
+      
+      <guid>https://theknowledgeseeker.in/posts/short-posts/scope-of-improvement/</guid>
+      <description>When someone says, they have mastered some skill/concept/subject and agrees, that they are perfect in that particular domain. They are wrong!
+There is always some scope for improvement. We can always improve our skills, knowledge, personality, projects and everything. But how do one know where is one lacking and needs improvement? How can one tell if they have really mastered something?
+That is simple. Answer the most simple questions we avoid on daily basis and you will know if you really understand the thing you think you know.</description>
+    </item>
+    
     <item>
       <title>All about the process!</title>
       <link>https://theknowledgeseeker.in/posts/operatingsystem/what-is-a-process/</link>
@@ -45,7 +56,7 @@ I love to learn new tools, techniques, concepts and everything that is fascinati
       
       <guid>https://theknowledgeseeker.in/about/what-now/</guid>
       <description>#OpenToWork I am working as a backend software engineer at Essentia Softserv LLP since July, 2021. I am working on django based web application to perform batch processing. Other than this, I am mostly reading the books listed below. I visited United States in month of May to attend Pycon US 2022. It was a nice experience. I may or may not write blog post about my experience.
-I am open to work as Python engineer, Devops Consultant and as a freelancer.</description>
+I enrolled in a computer architecture MOOC on coursera by Princeton University.</description>
     </item>
     
     <item>
